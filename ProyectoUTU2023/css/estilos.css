@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url("../images/fondoPaginaPrincipalx.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@font-face{
+    font-family:AdleryBlockletter;
+    src: url("../fonts/AdleryBlockletter.ttf");
+}
+
+@font-face{
+  font-family:Aileron;
+  src: url("../fonts/Aileron-Bold.otf");
+}
+
+h1 {
+    text-align: right;
+    margin-top: 8vh;
+    margin-right: 25vh;
+    font-size: 35vh;
+    font-family: AdleryBlockletter;
+    text-shadow: 5px 5px 5px white;
+}
+
+.colorLetraK {
+    color: #D42F32;
+}
+
+h2 {
+    text-align: right;
+    margin-top: -23vh;
+    margin-right: 19vh;
+    font-size: 6vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9);
+}
+
+h3{
+    text-align: right;
+    margin-top: 10vh;
+    margin-right: 45vh;
+    font-size: 8vh;
+    font-family: AdleryBlockletter;
+    text-shadow: 5px 5px 5px white;
+}
+
+/* Botones */
+
+button {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 2.2vh;
+    font-weight: 500;
+    background: #131124;
+    color: #FFFFFF;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    text-align: center;
+    padding: 1em 1em;
+}
+  
+  .gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0.6em;
+    margin-top: -0.25em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  }
+  
+  .label {
+    position: relative;
+    top: -1px;
+  }
+  
+  .transition {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 500ms;
+    background-color: #5E17EB;
+    border-radius: 9999px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  button:hover .transition {
+    width: 14em;
+    height: 14em;
+  }
+  
+  button:active {
+    transform: scale(0.97);
+  }
+
+  a{
+    text-decoration: none; /* Para sacar el subrayado que queda cuando el enlace ya fue visitado */
+  }
+
+.botones{
+    text-align: right;
+}
+
+.btn1{
+    font-size: 3.2vh;
+    margin-right:48vh;
+    font-family:Aileron;
+}
+
+.btn2{
+    margin-top: 10vh;
+    margin-right: 25vh;
+    width: 10em;
+    font-family:Aileron;
+}
+
+.btn3{
+    margin-top: 10vh;
+    margin-right: 26vh;
+    width: 10em;
+    font-family:Aileron;
+}
+
+/* Para cambiar el boton de la letra cuando el enlace no ha sido visitado */
+.botones a:link {
+  color: #FFFFFF;
+}
+/* Para cambiar el boton de la letra cuando el enlace ya ha sido visitado */
+.botones a:visited {  
+  color: #FFFFFF;
+}
+
+
+
+
+/*boton activo:   #5E17EB   */
