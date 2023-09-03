@@ -66,12 +66,13 @@ button{
     padding: 10px 20px;
     width: 30vh;
     background-color: #141414;
-    color: rgb(233, 25, 25);
     opacity: 0.95;
+    color: black;
     border: 2px solid #aaaaaa;
     border-radius: 5px;
     cursor: pointer;
     transition: color 0.2s, border-color 0.2s; /* Agregar transición para color y borde */
+    font-size: 1.5em;
     font-family: Aileron;
 }
 
