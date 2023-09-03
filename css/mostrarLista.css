@@ -30,16 +30,15 @@ input{
 }
 
 .buscador{
-        padding: 10px 20px;
-        width: 50vh;
-        background-color: #141414;
-        color: #aaaaaa;
-        opacity: 0.95;
-        border: 2px solid #aaaaaa;
-        border-radius: 5px;
-        padding: 2vh;
-        cursor: pointer;
-        transition: color 0.2s, border-color 0.2s; /* Agregar transición para color y borde */
+    padding: 10px 20px;
+    width: 50vh;
+    background-color: #141414;
+    color: #aaaaaa;
+    opacity: 0.95;
+    border: 2px solid #aaaaaa;
+    border-radius: 5px;
+    padding: 2vh;
+    transition: color 0.2s, border-color 0.2s;
 }
 
 .lupa{
@@ -52,3 +51,44 @@ input{
 .primera-fila{
     font-size: 1.4em;
 }
+
+div.botones-modificar{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    padding: 10px 20px;
+    width: 30vh;
+    background-color: #141414;
+    color: rgb(233, 25, 25);
+    opacity: 0.95;
+    border: 2px solid #aaaaaa;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s; /* Agregar transición para color y borde */
+    font-family: Aileron;
+}
+
+button:hover{
+    color: #5E17EB;
+    border-color: #5E17EB;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Para cambiar el boton de la letra cuando el enlace no ha sido visitado */
+.botones a:link {
+    color: rgb(230, 230, 230);
+  }
+  /* Para cambiar el boton de la letra cuando el enlace ya ha sido visitado */
+  .botones a:visited {  
+    color: rgb(230, 230, 230);
+  }

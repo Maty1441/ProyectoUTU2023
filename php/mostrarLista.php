@@ -12,10 +12,11 @@
           width: 80%;
           margin: 0 auto;
           margin-top: 10vh;
+          opacity: 0.97;
           font-family: Aileron;
         }
 
-        th, td {
+         th, td {
           padding: 10px 20px;
           width: 50vh;
           background-color: #141414;
@@ -33,6 +34,11 @@
         }
 
         td:hover{
+          color: #5E17EB;
+          border-color: #5E17EB;
+        }
+
+        tr:hover{
           color: #5E17EB;
           border-color: #5E17EB;
         }
@@ -63,6 +69,16 @@ $consulta = "SELECT CONCAT(Nombre, ' ', Apellido) AS NombreCompleto, Edad, Cedul
 $resultado = $conexion->query($consulta);
 
 if ($resultado->num_rows > 0) {
+  echo "<div class='botones-modificar'>
+        <button>
+        <a href='#'>Modificar</a>
+        </button>
+        <button>
+        <a href='#'>Agregar</a>
+        </button>
+        <button>
+        <a href='#'>Eliminar</a>
+        </button></div>";
   echo "<table border='0'>
           <tr class='primera-fila'>
             <th>Nombre Completo</th>

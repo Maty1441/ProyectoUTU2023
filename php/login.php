@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
     echo '</style>';
     
     echo '<div style="color: #DDDDDD; text-shadow: 1px 70px 1px 1px white; font-size: 7vh; padding: 10px; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: sans-serif;">';
-    echo 'Nombre de usuario incorrecto.';
+    echo 'Contraseña incorrecta, intente nuevamente.';
     echo '</div>';
     
     
