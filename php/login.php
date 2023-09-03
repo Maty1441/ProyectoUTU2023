@@ -11,9 +11,8 @@ if ($conn->connect_error) {
     die("La conexión a la base de datos falló: " . $conn->connect_error);
 }
 
-$nombre_usuario = $_POST["contraseña"]; // Asegúrate de que estás usando el campo correcto del formulario
+$nombre_usuario = $_POST["contraseña"];
 
-// Consulta SQL para buscar un registro con el nombre de usuario proporcionado
 $sql = "SELECT * FROM usuarios WHERE nombre_usuario = '$nombre_usuario'";
 $result = $conn->query($sql);
 

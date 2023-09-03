@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0,0,0, .75)), url("../images/fondoMostrarLista.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@font-face{
+    font-family:AdleryBlockletter;
+    src: url("../fonts/AdleryBlockletter.ttf");
+}
+
+@font-face{
+  font-family:Aileron;
+  src: url("../fonts/Aileron-Bold.otf");
+}
+
+form{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 10vh; 
+}
+
+input{
+    font-family: Aileron;
+    font-size: 1.2em;
+}
+
+.buscador{
+        padding: 10px 20px;
+        width: 50vh;
+        background-color: #141414;
+        color: #aaaaaa;
+        opacity: 0.95;
+        border: 2px solid #aaaaaa;
+        border-radius: 5px;
+        padding: 2vh;
+        cursor: pointer;
+        transition: color 0.2s, border-color 0.2s; /* Agregar transición para color y borde */
+}
+
+.lupa{
+    background-color: transparent;
+    border: none;
+    font-size: 3em;
+    color: white;
+}
+
+.primera-fila{
+    font-size: 1.4em;
+}
