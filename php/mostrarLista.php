@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../css/mostrarLista.css">
-    <style>
+<!--    <style>
         table {
           text-align: center;
           text-decoration: none;
@@ -15,48 +15,42 @@
           opacity: 0.97;
           font-family: Aileron;
         }
-
+    
          th, td {
-          padding: 10px 20px;
-          width: 50vh;
+          padding: 8px 10px;
+          width: 15em;
           background-color: #141414;
           color: rgb(230, 230, 230);
           opacity: 0.95;
           border: 2px solid #aaaaaa;
-          border-radius: 5px;
-          cursor: pointer;
           transition: color 0.2s, border-color 0.2s; /* Agregar transición para color y borde */
         }
-
-        th:hover{
-          color: #5E17EB;
-          border-color: #5E17EB;
-        }
-
+    
         td:hover{
           color: #5E17EB;
           border-color: #5E17EB;
         }
-
+    
         tr:hover{
           color: #5E17EB;
           border-color: #5E17EB;
-        }
-
-        .nom{
-          text-align:center;
-        }
-    </style>
+        }    
+    </style>-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin1</title>
+    <title>Administrador</title>
 </head>
 <body>
-<div>
+<div class='busc'>
   <form method="GET" action="resultado_busqueda.php">
     <input type="text" name="consulta" placeholder="Buscador" class="buscador">
     <button type="submit" class="lupa">&#8981;</button>
   </form>
+</div>
+<div class='botones'>
+      <a href='#'>Modificar</a>
+      <a href='#'>Agregar</a>
+      <a href='#'>Eliminar</a>
 </div>
 <?php
 $conexion = new mysqli("127.0.0.1", "root", "", "basedepruebas2", 33065);
@@ -69,16 +63,6 @@ $consulta = "SELECT CONCAT(Nombre, ' ', Apellido) AS NombreCompleto, Edad, Cedul
 $resultado = $conexion->query($consulta);
 
 if ($resultado->num_rows > 0) {
-  echo "<div class='botones-modificar'>
-        <button>
-        <a href='#'>Modificar</a>
-        </button>
-        <button>
-        <a href='#'>Agregar</a>
-        </button>
-        <button>
-        <a href='#'>Eliminar</a>
-        </button></div>";
   echo "<table border='0'>
           <tr class='primera-fila'>
             <th>Nombre Completo</th>

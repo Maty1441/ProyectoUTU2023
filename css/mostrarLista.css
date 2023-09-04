@@ -1,6 +1,9 @@
-body{
+*{
     margin: 0;
     padding: 0;
+}
+
+body{
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, .75), rgba(0,0,0, .75)), url("../images/fondoMostrarLista.png");
     background-size: cover;
@@ -19,9 +22,7 @@ body{
 }
 
 form{
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    margin-left: 10vh; 
+    border: 2px solid red;
 }
 
 input{
@@ -30,15 +31,11 @@ input{
 }
 
 .buscador{
-    padding: 10px 20px;
-    width: 50vh;
-    background-color: #141414;
-    color: #aaaaaa;
-    opacity: 0.95;
-    border: 2px solid #aaaaaa;
-    border-radius: 5px;
-    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
     transition: color 0.2s, border-color 0.2s;
+    border: 2px solid red;
 }
 
 .lupa{
@@ -46,42 +43,29 @@ input{
     border: none;
     font-size: 3em;
     color: white;
+    border: 2px solid red;
 }
 
 .primera-fila{
     font-size: 1.4em;
 }
 
-div.botones-modificar{
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 10vh;
-    margin-bottom: 2vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-button{
-    padding: 10px 20px;
-    width: 30vh;
+div{
+    height: 80%;
+    width: 80%;
     background-color: #141414;
-    opacity: 0.95;
-    color: black;
-    border: 2px solid #aaaaaa;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: color 0.2s, border-color 0.2s; /* Agregar transición para color y borde */
-    font-size: 1.5em;
-    font-family: Aileron;
+    border: 2px solid red;
 }
 
-button:hover{
-    color: #5E17EB;
-    border-color: #5E17EB;
+.botones a{
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    color: aqua;
 }
 
 a{
+    background-color: #141414;
     text-decoration: none;
 }
 

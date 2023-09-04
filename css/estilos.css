@@ -39,15 +39,6 @@ h2 {
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9);
 }
 
-h3{
-    text-align: right;
-    margin-top: 10vh;
-    margin-right: 45vh;
-    font-size: 8vh;
-    font-family: AdleryBlockletter;
-    text-shadow: 5px 5px 5px white;
-}
-
 /* Botones */
 
 button {
@@ -108,6 +99,7 @@ button {
 
 .botones{
     text-align: right;
+    margin-top: 15vh;
 }
 
 .btn1{
