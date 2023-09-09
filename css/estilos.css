@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image:url("../images/fondoPaginaPrincipalx.png");
+    background-image:url("../images/fondoPaginaPrincipal1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -17,13 +17,17 @@ body{
   src: url("../fonts/Aileron-Bold.otf");
 }
 
+@font-face{
+  font-family:Montserrat;
+  src: url("../fonts/Montserrat.ttf");
+}
+
 h1 {
     text-align: right;
     margin-top: 8vh;
     margin-right: 25vh;
     font-size: 35vh;
     font-family: AdleryBlockletter;
-    text-shadow: 5px 5px 5px white;
 }
 
 .colorLetraK {
@@ -36,21 +40,60 @@ h2 {
     margin-right: 19vh;
     font-size: 6vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9);
+}
+
+h4 {
+  margin-bottom: 0;
+  margin-right: .1em;
+  font-family: AdleryBlockletter;
+  font-size: 2em;
+  color: black;
+}
+
+.botones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+  width: 80%;
+  margin: auto;
+}
+
+.boton1{
+  padding-left: 50%;
+}
+
+.boton2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.btn2, .btn3{
+  margin: auto;
+}
+
+div.boton2{
+  height: 75%;
+  margin-left: 8%;
+  text-align: center;
 }
 
 /* Botones */
 
 button {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: 2.2vh;
+    font-size: 2.5vh;
     font-weight: 500;
-    background: #131124;
+    width: 15em;
+    height: 3.2em;
+    background: #D42F32;
     color: #FFFFFF;
     border: none;
     position: relative;
     overflow: hidden;
-    border-radius: 0.6em;
+    border-radius: 20px;
     text-align: center;
     padding: 1em 1em;
 }
@@ -61,7 +104,7 @@ button {
     height: 100%;
     left: 0;
     top: 0;
-    border-radius: 0.6em;
+    border-radius: 20px;
     margin-top: -0.25em;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
   }
@@ -73,9 +116,9 @@ button {
   
   .transition {
     transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    transition-duration: 500ms;
+    transition-duration: 350ms;
     background-color: #5E17EB;
-    border-radius: 9999px;
+    border-radius: 20px;
     width: 0;
     height: 0;
     position: absolute;
@@ -85,8 +128,8 @@ button {
   }
   
   button:hover .transition {
-    width: 14em;
-    height: 14em;
+    width: 18em;
+    height: 18em;
   }
   
   button:active {
@@ -94,33 +137,9 @@ button {
   }
 
   a{
+    font-family: Montserrat;
     text-decoration: none; /* Para sacar el subrayado que queda cuando el enlace ya fue visitado */
   }
-
-.botones{
-    text-align: right;
-    margin-top: 15vh;
-}
-
-.btn1{
-    font-size: 3.2vh;
-    margin-right:48vh;
-    font-family:Aileron;
-}
-
-.btn2{
-    margin-top: 10vh;
-    margin-right: 25vh;
-    width: 10em;
-    font-family:Aileron;
-}
-
-.btn3{
-    margin-top: 10vh;
-    margin-right: 26vh;
-    width: 10em;
-    font-family:Aileron;
-}
 
 /* Para cambiar el boton de la letra cuando el enlace no ha sido visitado */
 .botones a:link {
@@ -131,7 +150,10 @@ button {
   color: #FFFFFF;
 }
 
-
-
-
+footer {
+  position: relative;
+  text-align: right;
+  margin-top: 2em;
+  margin-bottom: 0;
+}
 /*boton activo:   #5E17EB   */

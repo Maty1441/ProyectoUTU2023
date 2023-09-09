@@ -71,7 +71,7 @@ input{
     border-radius: 0.6em;
     padding: .95em 4em .95em 0.8em;/*arriba, derecha, abajo, izquierda*/
     min-height: 3vh;
-    font-size: 12px;
+    font-size: 1em;
     margin-top: 1vh;
     margin-right: auto;
     border: .3em solid #5E17EB;
@@ -79,7 +79,7 @@ input{
 }
 
 ::placeholder {
-    font-size: 12px;
+    font-size: 1em;
     color: gray;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;

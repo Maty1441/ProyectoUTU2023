@@ -21,13 +21,13 @@ body{
   src: url("../fonts/Aileron-Bold.otf");
 }
 
-form{
-    border: 2px solid red;
-}
-
 input{
     font-family: Aileron;
     font-size: 1.2em;
+}
+
+div{
+    width: 100%;
 }
 
 .buscador{
@@ -35,7 +35,6 @@ input{
     justify-content: center;
     margin-left: auto;
     transition: color 0.2s, border-color 0.2s;
-    border: 2px solid red;
 }
 
 .lupa{
@@ -43,18 +42,10 @@ input{
     border: none;
     font-size: 3em;
     color: white;
-    border: 2px solid red;
 }
 
 .primera-fila{
     font-size: 1.4em;
-}
-
-div{
-    height: 80%;
-    width: 80%;
-    background-color: #141414;
-    border: 2px solid red;
 }
 
 .botones a{
@@ -76,4 +67,10 @@ a{
   /* Para cambiar el boton de la letra cuando el enlace ya ha sido visitado */
   .botones a:visited {  
     color: rgb(230, 230, 230);
+  }
+
+  .busc{
+    margin: 0;
+    text-align: center;
+    justify-content: flex;
   }

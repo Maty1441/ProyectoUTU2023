@@ -79,8 +79,7 @@ a{
   
   /* Estilo cuando el mouse pasa por encima del botón */
   .btn:hover {
-    color: #5E17EB;
-    border-color: #5E17EB;
+    background-color: #5e17eb65;
   }
   
   /* Estilo cuando se presiona el botón */

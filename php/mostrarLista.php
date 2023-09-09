@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../css/mostrarLista.css">
-<!--    <style>
+   <style>
         table {
           text-align: center;
           text-decoration: none;
           color: white;
           font-size: 1em;
-          border-collapse: collapse;
+          border-left: 2px solid #5E17EB;
+          border-right: 2px solid #5E17EB;
           width: 80%;
           margin: 0 auto;
           margin-top: 10vh;
           opacity: 0.97;
           font-family: Aileron;
+        }
+
+        th{
+          line-height: 3em;
         }
     
          th, td {
@@ -22,7 +27,8 @@
           background-color: #141414;
           color: rgb(230, 230, 230);
           opacity: 0.95;
-          border: 2px solid #aaaaaa;
+          border-left: 2px solid #5E17EB;
+          border-right: 2px solid #5E17EB;
           transition: color 0.2s, border-color 0.2s; /* Agregar transición para color y borde */
         }
     
@@ -35,7 +41,7 @@
           color: #5E17EB;
           border-color: #5E17EB;
         }    
-    </style>-->
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrador</title>
