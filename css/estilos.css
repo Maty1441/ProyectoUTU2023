@@ -57,10 +57,12 @@ h4 {
   height: 20em;
   width: 80%;
   margin: auto;
+  margin-top: -5em;
+  border: 2px solid red;
 }
 
 .boton1{
-  padding-left: 50%;
+  padding-left: 60%;
 }
 
 .boton2{
