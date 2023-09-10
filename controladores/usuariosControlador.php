@@ -1,4 +1,5 @@
 <?php
+
 class usuariosControlador
 {
     public function __construct()
@@ -8,7 +9,7 @@ class usuariosControlador
     
     public function login()
 {
-        require "usuarios/login.html";
+        require "login/login.html";
     }
 
     public function validar()
@@ -36,8 +37,7 @@ class usuariosControlador
     public function cerrarSesion()
 {
         session_destroy();
-
-        require "vista/usuarios/login.html";
+        require "login/login.html";
     }
 }
 ?>

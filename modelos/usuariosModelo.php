@@ -29,5 +29,4 @@ class usuarios_modelo
         }
     }
 }
-
 ?>
