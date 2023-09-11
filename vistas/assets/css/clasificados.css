@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0,0,0, .5)), url("../images/fondoClasificados.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@font-face{
+    font-family:AdleryBlockletter;
+    src: url("/ProyectoUTU2023/vistas/assets/fonts/AdleryBlockletter.ttf");
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: AdleryBlockLetter;
+    font-size: 5em;
+    color: white;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    flex: 1; /* Utiliza flex en lugar de flex-grow */
+    text-align: center; /* Añade alineación de texto al centro */
+    font-family: AdleryBlockletter;
+    font-size: 1.8em;
+    color: white;
+}
+
+.barra {
+    color: white;
+    height: 2em;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; /* Cambia space-around a space-between */
+    align-items: center;
+    text-align: center;
+    font-family: AdleryBlockletter;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+table {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    border-left: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10vh;
+    font-size: 2em;
+  }
+
+  th{
+    line-height: 3em;
+  }
+
+   th, td {
+    padding: 8px 10px;
+    width: 15em;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(230, 230, 230);
+    opacity: 0.95;
+    border-right: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    transition: color 0.2s, border-color 0.2s; /* Agregar transición para color y borde */
+  }
+
+  td:hover{
+    color: #D42F32;
+    border-color: #D42F32;
+  }
+
+  tr:hover{
+    color: #D42F32;
+    border-color: #D42F32;
+  } 
+
+  .nombre{
+    font-family: AdleryBlockLetter;
+  }
+
+  .primeraFila{
+    font-family: AdleryBlockLetter;
+  }
+
+/* Para cambiar el boton de la letra cuando el enlace no ha sido visitado */
+.botones a:link {
+    color: rgb(230, 230, 230);
+  }
+  /* Para cambiar el boton de la letra cuando el enlace ya ha sido visitado */
+.botones a:visited {  
+    color: rgb(230, 230, 230);
+  }
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    margin-top: 5em;
+}
+
+a{
+    font-family: Aileron;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.6em;
+    text-align: center;
+    text-decoration: none;
+    width: 5.5em;
+    border-radius: 6px;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+a:hover{
+    background-color: rgba(94, 23, 235, 0.5);
+  }
+  
+  a:focus {
+    border: 2px solid #5E17EB;
+    outline: none;
+  }

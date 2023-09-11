@@ -1,9 +1,9 @@
 <?php
 $servername = "localhost";
-$username = "usuario1";
-$password = "1234";
-$dbname = "basedepruebas2";
-$port = 33065;
+$username = "root";
+$password = "";
+$dbname = "torneo_bd";
+$port = 3306;
 
 $conn = new mysqli($servername, $username, $password, $dbname, $port);
 
@@ -11,9 +11,9 @@ if ($conn->connect_error) {
     die("La conexión a la base de datos falló: " . $conn->connect_error);
 }
 
-$nombre_usuario = $_POST["contraseña"];
+$password = $_POST["contraseña"];
 
-$sql = "SELECT * FROM usuarios WHERE nombre_usuario = '$nombre_usuario'";
+$sql = "SELECT * FROM usuarios WHERE contraseña = '$password'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

@@ -8,10 +8,10 @@
 <body>
 <?php
 $servername = "localhost";
-$username = "usuario1";
-$password = "1234";
-$database = "basedepruebas2";
-$port = 33065;
+$username = "root";
+$password = "";
+$database = "torneo_bd";
+$port = 3306;
 
 $conexion = new mysqli($servername, $username, $password, $database, $port);
 
@@ -19,17 +19,16 @@ if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);
 }
 
-// Datos del formulario
+$ci = $_POST["Cedula"];
 $nombre = $_POST["Nombre"];
 $apellido = $_POST["Apellido"];
 $edad = $_POST["Edad"];
-$cedula = $_POST["Cedula"];
 $departamento = $_POST["Departamento"];
+$genero = $_POST["Genero"];
 
-// Consulta SQL para insertar los datos en la tabla existente
-$insertar_datos = "INSERT INTO participantes (Nombre, Apellido, Edad, Cedula, Departamento) VALUES ('$nombre', '$apellido', '$edad', '$cedula', '$departamento')";
+$insertar_datos = "INSERT INTO competidores (ci, Nombre, Apellido, fecha_nacimiento, Genero, Departamento) VALUES ( '$ci', '$nombre', '$apellido', '$edad', '$genero', '$departamento')";
 
-if (empty($nombre) || empty($apellido) || empty($edad) || empty($cedula) || empty($departamento)) {
+if (empty($nombre) || empty($apellido) || empty($edad) || empty($ci) || empty($genero) || empty($departamento)) {
     echo '<style>';
     echo 'body { 
         margin: 0;
@@ -56,8 +55,7 @@ if (empty($nombre) || empty($apellido) || empty($edad) || empty($cedula) || empt
     echo '</div>';
 } else {
     // Consulta SQL para insertar los datos en la tabla existente
-    $insertar_datos = "INSERT INTO participantes (Nombre, Apellido, Edad, Cedula, Departamento) VALUES ('$nombre', '$apellido', '$edad', '$cedula', '$departamento')";
-
+    $insertar_datos = "INSERT INTO competidores (ci, Nombre, Apellido, fecha_nacimiento, Genero, Departamento) VALUES ( '$ci', '$nombre', '$apellido', '$edad', '$genero', '$departamento')";
     if ($conexion->query($insertar_datos) === TRUE) {
         echo '<style>';
         echo 'body { 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="stylesheet" href="/ProyectoUTU2023/vistas/assets/css/formulario.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
@@ -10,7 +10,7 @@
     <h1><span>O.</span><span class="colorLetraK">K</span><span>.C.</span></h1>
     <h2>Official <span class="colorLetraK">Karate</span> Championship</h2>
 
-        <form action="../php/action_page.php" target="_blank" method="post">
+        <form action="/ProyectoUTU2023/php/action_page.php" target="_blank" method="post">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nom" name="Nombre" value="" placeholder="Nombre" maxlength="50"><br><br>
         
@@ -44,6 +44,13 @@
             <option value="Soriano">Soriano</option>
             <option value="Tacuarembó">Tacuarembó</option>
             <option value="Treinta y Tres">Treinta y Tres</option>
+            </select><br><br>
+
+            <label for="genero">Genero:</label>
+            <select id="dep" name="Genero">
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+                <option value="otro">Otro</option>
             </select><br><br>
 
             <div class="boton-ingresar">

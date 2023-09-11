@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../css/mostrarLista.css">
+    <link rel="stylesheet" href="/ProyectoUTU2023/vistas/assets/css/mostrarLista.css">
    <style>
         table {
           text-align: center;
@@ -58,18 +58,19 @@
 </div>
 </div>
 <div class='botones'>
+      <a href='#'>Confirmar</a>  
       <a href='#'>Modificar</a>
       <a href='#'>Agregar</a>
       <a href='#'>Eliminar</a>
 </div>
 <?php
-$conexion = new mysqli("127.0.0.1", "root", "", "basedepruebas2", 33065);
+$conexion = new mysqli("127.0.0.1", "root", "", "torneo_bd", 3306);
 
 if ($conexion->connect_error) {
   die("Error de conexión: " . $conexion->connect_error);
 }
 
-$consulta = "SELECT CONCAT(Nombre, ' ', Apellido) AS NombreCompleto, Edad, Cedula, Departamento FROM participantes"; //CONTAC es una funcion que conecta valores
+$consulta = "SELECT CONCAT(Nombre, ' ', Apellido) AS NombreCompleto, fecha_nacimiento, ci, Departamento FROM competidores"; //CONTAC es una funcion que conecta valores
 $resultado = $conexion->query($consulta);
 
 if ($resultado->num_rows > 0) {
@@ -84,8 +85,8 @@ if ($resultado->num_rows > 0) {
   while ($fila = $resultado->fetch_assoc()) {
     echo "<tr>
             <td>" . $fila["NombreCompleto"] . "</td>
-            <td>" . $fila["Edad"] . "</td>
-            <td>" . $fila["Cedula"] . "</td>
+            <td>" . $fila["fecha_nacimiento"] . "</td>
+            <td>" . $fila["ci"] . "</td>
             <td>" . $fila["Departamento"] . "</td>
           </tr>";
 }
