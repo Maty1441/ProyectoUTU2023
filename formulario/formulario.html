@@ -18,13 +18,33 @@
             <input type="text" id="ape" name="Apellido" value="" placeholder="Apellido" maxlength="50"><br><br>
 
             <label for="fNac">Fecha de nacimiento:</label>
-            <input type="date" id="fNac" name="Edad" placeholder="DD/MM/AAAA" maxlength="4"><br><br>
+            <input type="date" id="fNac" name="Edad" placeholder="DD/MM/AAAA" min="1900-01-01" max="2099-12-31"><br><br>
     
             <label for="cedula">Cedula:</label>
-            <input type="text" id="ci" name="Cedula" value="" placeholder="C.I" maxlength="10"><br><br>
+            <input type="number" id="ci" name="Cedula" value="" placeholder="C.I" min="1" max="10000000"><br><br>
     
-            <label for="cedula">Departamento:</label>
-            <input type="text" id="departamento" name="Departamento" placeholder="Departamento" maxlength="15"><br><br><br><br>
+            <label for="departamento">Departamento:</label>
+            <select id="dep" name="Departamento">
+            <option value="Artigas">Artigas</option>
+            <option value="Canelones">Canelones</option>
+            <option value="Cerro Largo">Cerro Largo</option>
+            <option value="Colonia">Colonia</option>
+            <option value="Durazno">Durazno</option>
+            <option value="Flores">Flores</option>
+            <option value="Florida">Florida</option>
+            <option value="Lavalleja">Lavalleja</option>
+            <option value="Maldonado">Maldonado</option>
+            <option value="Montevideo">Montevideo</option>
+            <option value="Paysandú">Paysandú</option>
+            <option value="Río Negro">Río Negro</option>
+            <option value="Rivera">Rivera</option>
+            <option value="Rocha">Rocha</option>
+            <option value="Salto">Salto</option>
+            <option value="San José">San José</option>
+            <option value="Soriano">Soriano</option>
+            <option value="Tacuarembó">Tacuarembó</option>
+            <option value="Treinta y Tres">Treinta y Tres</option>
+            </select><br><br>
 
             <div class="boton-ingresar">
             <button type="submit" class="btn">

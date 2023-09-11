@@ -61,32 +61,116 @@ label {
     margin-top: 1vh;
 }
 
-input[type="text"],
-input[type="date"] {
+/* text */
+
+input[type="text"] {
+    width: 12em;
     border-radius: 10px;
-    padding: 1em 4em;
+    padding: 0.5em 4em;
     text-align: left;
-    min-height: 1em;
-    font-size: .8em;
-    margin-top: .25em;
+    min-height: 2em;
+    font-size: 2vh;
+    margin-top: 0.25em;
     margin-right: 10vh;
     color: white;
     background-color: rgba(17, 17, 17, 0);
-    border: .3em solid #5E17EB;
+    border: 3px solid rgb(220, 220, 220);
+    transition: border 0.3s;
 }
 
-/*select{
-    color: white;
-    text-align: right;
-    margin-right: 0vh;
-    margin-top: 2vh;
-    min-height: 2vh;
-    font-size: 1.5vh;
-}*/
+input[type="text"]:hover{
+    border: 3px solid #5E17EB;
+}
+
+input[type="text"]:focus {
+  border: 3px solid #5E17EB;
+  outline: none;
+}
+
+/* date */
+
+input[type="date"]{
+  width: 12em;
+  border-radius: 10px;
+  padding: 0.5em 4em;
+  text-align: left;
+  min-height: 2em;
+  font-size: 2vh;
+  margin-top: 0.25em;
+  margin-right: 10vh;
+  color: white;
+  background-color: rgba(17, 17, 17, 0);
+  border: 3px solid rgb(220, 220, 220);
+  transition: border 0.3s;
+}
+
+input[type="date"]:hover{
+  border: 3px solid #5E17EB;
+}
+
+input[type="date"]:focus {
+  border: 3px solid #5E17EB;
+  outline: none;
+}
+
+/* number */
+
+input[type="number"]{
+  width: 12em;
+  height: 2em;
+  border-radius: 10px;
+  padding: 0.5em 4em;
+  text-align: left;
+  min-height: 2em;
+  font-size: 2vh;
+  margin-top: 0.25em;
+  margin-right: 10vh;
+  color: white;
+  background-color: rgba(17, 17, 17, 0);
+  border: 3px solid rgb(220, 220, 220);
+  transition: border 0.3s;
+}
+
+input[type="number"]:hover{
+  border: 3px solid #5E17EB;
+}
+
+input[type="number"]:focus {
+  border: 3px solid #5E17EB;
+  outline: none;
+}
+ 
+/* select */
+
+select {
+  width: 20.5em;
+  border-radius: 10px;
+  padding: 0.5em 4em;
+  text-align: left;
+  min-height: 3.5em;
+  font-size: 2vh;
+  margin-top: 0.25em;
+  margin-right: 10vh;
+  color: white;
+  background-color: rgb(20, 20, 20);
+  border: 3px solid rgb(220, 220, 220);
+  transition: border 0.3s;
+}
+
+select:hover{
+  border: 3px solid #5E17EB;
+}
+
+select:focus {
+  border: 3px solid #5E17EB;
+  outline: none;
+}
+
+/* placeholder */
 
 ::placeholder {
-    font-size: 2vh;
-    color: gray;
+    font-size: 1.2em;
+    color: white;
     text-align: left;
 }
 /* Ingreso de datos */
