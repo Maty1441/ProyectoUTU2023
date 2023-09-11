@@ -21,6 +21,35 @@ body{
   src: url("../fonts/Aileron-Bold.otf");
 }
 
+h1{
+    display: flex;
+    justify-content: right;
+    margin-right: 1em;
+    margin-top: 0.2em;
+    font-size: 8em;
+    color: white;
+    font-family:AdleryBlockletter;
+}
+
+h2{
+    display: flex;
+    justify-content: right;
+    margin-right: 3em;
+    margin-top: 0.2em;
+    font-size: 1.6em;
+    color: white;
+    font-family:Aileron;
+}
+
+.colorLetraK{
+    color: red;
+    word-spacing: 2em;
+}
+
+form{
+    margin-top: -8em;
+}
+
 input{
     font-family: Aileron;
     font-size: 1.2em;
@@ -30,47 +59,88 @@ div{
     width: 100%;
 }
 
-.buscador{
+.busc {
+    margin: 0 2em 0 2em; /* margin: (top) (right) (bottom) (left) */
+    text-align: center;
     display: flex;
-    justify-content: center;
-    margin-left: auto;
-    transition: color 0.2s, border-color 0.2s;
-}
+    justify-content: left;
+  }
 
-.lupa{
+.search-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .buscador {
+    flex: 1;
+    font-family: Aileron;
+    font-size: 1.2em;
+    height: 3em;
+    width: 15em;
+    padding-left: 1em;
+    margin-right: 10px;
+    border-radius: 12px;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    transition: border 0.5s;
+  }
+
+  .buscador:hover{
+    border: 2px solid #5E17EB;
+  }
+  
+  .buscador:focus {
+    border: 2px solid #5E17EB;
+    outline: none;
+  }
+
+  .lupa {
     background-color: transparent;
     border: none;
     font-size: 3em;
-    color: white;
-}
+    color: rgb(200, 200, 200);
+  }
 
 .primera-fila{
     font-size: 1.4em;
 }
 
-.botones a{
-    text-align: center;
-    justify-content: space-around;
+.botones{
     display: flex;
-    color: aqua;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    margin-top: 5em;
 }
 
 a{
-    background-color: #141414;
+    font-family: Aileron;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.6em;
+    text-align: center;
     text-decoration: none;
+    width: 5.5em;
+    border-radius: 6px;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.25);
 }
+
+a:hover{
+    background-color: rgba(94, 23, 235, 0.5);
+  }
+  
+  a:focus {
+    border: 2px solid #5E17EB;
+    outline: none;
+  }
 
 /* Para cambiar el boton de la letra cuando el enlace no ha sido visitado */
 .botones a:link {
     color: rgb(230, 230, 230);
   }
   /* Para cambiar el boton de la letra cuando el enlace ya ha sido visitado */
-  .botones a:visited {  
+.botones a:visited {  
     color: rgb(230, 230, 230);
-  }
-
-  .busc{
-    margin: 0;
-    text-align: center;
-    justify-content: flex;
   }

@@ -47,11 +47,15 @@
     <title>Administrador</title>
 </head>
 <body>
+<div class="arriba">
+<h1><span>O.</span><span class="colorLetraK">K</span><span>.C.</span></h1>
+<h2>Official <span class="colorLetraK"> Karate </span> Championship</h2>
 <div class='busc'>
-  <form method="GET" action="resultado_busqueda.php">
+  <form method="GET" action="resultado_busqueda.php" class="search-form">
     <input type="text" name="consulta" placeholder="Buscador" class="buscador">
     <button type="submit" class="lupa">&#8981;</button>
   </form>
+</div>
 </div>
 <div class='botones'>
       <a href='#'>Modificar</a>
