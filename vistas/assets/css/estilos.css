@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image:url("/ProyectoUTU2023/vistas/assets/images/fondoPaginaPrincipal1.png");
+    background-image:url("../images/fondoPaginaPrincipal1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -9,17 +9,17 @@ body{
 
 @font-face{
     font-family:AdleryBlockletter;
-    src: url("/ProyectoUTU2023/vistas/assets/fonts/AdleryBlockletter.ttf");
+    src: url("../fonts/AdleryBlockletter.ttf");
 }
 
 @font-face{
   font-family:Aileron;
-  src: url("/ProyectoUTU2023/vistas/assets/fonts/Aileron-Bold.otf");
+  src: url("../fonts/Aileron-Bold.otf");
 }
 
 @font-face{
   font-family:Montserrat;
-  src: url("/ProyectoUTU2023/vistas/assets/fonts/Montserrat.ttf");
+  src: url("../fonts/Montserrat.ttf");
 }
 
 h1 {

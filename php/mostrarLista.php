@@ -1,47 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/ProyectoUTU2023/vistas/assets/css/mostrarLista.css">
-   <style>
-        table {
-          text-align: center;
-          text-decoration: none;
-          color: white;
-          font-size: 1em;
-          border-left: 2px solid #5E17EB;
-          border-right: 2px solid #5E17EB;
-          width: 80%;
-          margin: 0 auto;
-          margin-top: 10vh;
-          opacity: 0.97;
-          font-family: Aileron;
-        }
-
-        th{
-          line-height: 3em;
-        }
-    
-         th, td {
-          padding: 8px 10px;
-          width: 15em;
-          background-color: #141414;
-          color: rgb(230, 230, 230);
-          opacity: 0.95;
-          border-left: 2px solid #5E17EB;
-          border-right: 2px solid #5E17EB;
-          transition: color 0.2s, border-color 0.2s; /* Agregar transición para color y borde */
-        }
-    
-        td:hover{
-          color: #5E17EB;
-          border-color: #5E17EB;
-        }
-    
-        tr:hover{
-          color: #5E17EB;
-          border-color: #5E17EB;
-        }    
-    </style>
+    <link rel="stylesheet" href="../vistas/assets/css/mostrarLista.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrador</title>
@@ -94,7 +54,6 @@ if ($resultado->num_rows > 0) {
 } else {
   echo "No se encontraron registros.";
 }
-
 $conexion->close();
 ?>
 </body>

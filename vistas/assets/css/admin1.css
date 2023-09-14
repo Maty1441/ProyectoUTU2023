@@ -10,12 +10,12 @@ body{
 
 @font-face{
     font-family:AdleryBlockletter;
-    src: url("/ProyectoUTU2023/vistas/assets/fonts/AdleryBlockletter.ttf");
+    src: url("../fonts/AdleryBlockletter.ttf");
 }
 
 @font-face{
   font-family:Aileron;
-  src: url("/ProyectoUTU2023/vistas/assets/fonts/Aileron-Bold.otf");
+  src: url("../fonts/Aileron-Bold.otf");
 }
 
 h1 {
