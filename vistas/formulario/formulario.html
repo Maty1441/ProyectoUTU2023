@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../vistas/assets/css/formulario.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1><span>O.</span><span class="colorLetraK">K</span><span>.C.</span></h1>
+    <h2>Official <span class="colorLetraK">Karate</span> Championship</h2>
+
+        <form action="/ProyectoUTU2023/php/action_page.php" target="_blank" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nom" name="Nombre" value="" placeholder="Nombre" maxlength="50"><br><br>
+        
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="ape" name="Apellido" value="" placeholder="Apellido" maxlength="50"><br><br>
+
+            <label for="fNac">Fecha de nacimiento:</label>
+            <input type="date" id="fNac" name="Edad" placeholder="DD/MM/AAAA" min="1900-01-01" max="2099-12-31"><br><br>
+    
+            <label for="cedula">Cedula:</label>
+            <input type="number" id="ci" name="Cedula" value="" placeholder="C.I" min="1" max="10000000"><br><br>
+    
+            <label for="departamento">Departamento:</label>
+            <select id="dep" name="Departamento">
+            <option value="Artigas">Artigas</option>
+            <option value="Canelones">Canelones</option>
+            <option value="Cerro Largo">Cerro Largo</option>
+            <option value="Colonia">Colonia</option>
+            <option value="Durazno">Durazno</option>
+            <option value="Flores">Flores</option>
+            <option value="Florida">Florida</option>
+            <option value="Lavalleja">Lavalleja</option>
+            <option value="Maldonado">Maldonado</option>
+            <option value="Montevideo">Montevideo</option>
+            <option value="Paysandú">Paysandú</option>
+            <option value="Río Negro">Río Negro</option>
+            <option value="Rivera">Rivera</option>
+            <option value="Rocha">Rocha</option>
+            <option value="Salto">Salto</option>
+            <option value="San José">San José</option>
+            <option value="Soriano">Soriano</option>
+            <option value="Tacuarembó">Tacuarembó</option>
+            <option value="Treinta y Tres">Treinta y Tres</option>
+            </select><br><br>
+
+            <label for="genero">Genero:</label>
+            <select id="dep" name="Genero">
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+
+            <div class="boton-ingresar">
+            <button type="submit" class="btn">
+                <span class="transition"></span>
+                <span class="gradient"></span>
+                <span class="label">Ingresar</span>
+            </button></div><br><br>
+        </form>
+        <nav class="volver">
+            <a href="../index.html"><button class="btn1">
+                <span class="transition"></span>
+                <span class="gradient"></span>
+                <span class="label">Volver</span>
+            </a></button>
+        </nav>
+</body>
+</html>

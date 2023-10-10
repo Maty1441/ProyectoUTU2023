@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    font-family:AdleryBlockletter;
+    src: url("../fonts/AdleryBlockletter.ttf");
+}
+
+@font-face{
+  font-family:Aileron;
+  src: url("../fonts/Aileron-Bold.otf");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0,0,0, .75)), url("../images/fondoJuez.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+@media (max-width: 768px) {
+    body {
+      background-size: cover; 
+    }
+  }
+
+.contenedor-flex {
+    display: flex; /* Activa el modelo de caja flexible */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+  }
+  
+  .genero {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-top: 2.5em;
+    gap: 10em;
+  }
+  
+  .titulo {
+    width: 50%; 
+  }
+
+h1{
+    font-family: AdleryBlockLetter;
+    color: white;
+    text-align: right;
+    margin-top: .2em;
+    margin-right: .5em;
+    font-size: 4em;
+    
+}
+
+h2{
+    font-family: Aileron;
+    color: white;
+    text-align: right;
+    margin-right: .5em;
+    font-size: .8em;
+}
+
+.colorLetraK {
+    color: #D42F32;
+}
+
+div{
+   display: relative;
+   margin: auto;
+   margin-top: auto;
+}
+
+a{
+    font-family: Aileron;
+    background-color: white;
+    border: 2px double red;
+    outline: 1px solid white;
+    border-radius: 6px;
+    text-decoration: none;
+    color: red;
+    height: 2em;
+    width: 15em;
+    text-align: center;
+    line-height: 2em;
+    transition: color .3s, border .3s, outline .3s, background-color .3s;
+}
+
+a:hover{
+    color: white;
+    background-color: red;
+    border: 2px double white;
+    outline: 1px solid red;
+}
+
+.parteBaja a{
+    font-family: Aileron;
+    background-color: white;
+    border: 2px double red;
+    outline: 1px solid white;
+    border-radius: 6px;
+    text-decoration: none;
+    color: red;
+    height: 2em;
+    width: 15em;
+    text-align: center;
+    line-height: 2em;
+    transition: color .3s, border .3s, outline .3s, background-color .3s;
+}
+
+.rama {
+    margin-top: 5em;
+    margin-left: 1em;
+    margin-bottom: -10em;
+    width: 15em;
+    height: 50%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 2em;
+}
+
+.rama a {
+    font-family: Aileron;
+    font-size: 15px; 
+    text-decoration: none;
+    color: red;
+    background-color: white;
+    border: 2px double red;
+    outline: 1px solid white;
+    line-height: 2em;
+    height: 2em;
+    width: 15em;
+    display: block;
+    text-align: center;
+    margin-left: 10%;
+    border-radius: 6px;
+    transition: color .3s, border .3s, outline .3s, background-color .3s;
+}
+
+.rama a:hover {
+    color: white;
+    background-color: red;
+    border: 2px double white;
+    outline: 1px solid red;
+}
+
+.competidor {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    clear: both;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-right: 2%;
+  }
+  
+  .competidor a {
+    font-family: Aileron;
+    display: block;
+    text-decoration: none;
+    color: red;
+    background-color: white;
+    border: 2px double red;
+    outline: 1px solid white;
+  }
+
+  .competidor a:hover{
+    color: white;
+    background-color: red;
+    border: 2px double white;
+    outline: 1px solid red;
+  }
