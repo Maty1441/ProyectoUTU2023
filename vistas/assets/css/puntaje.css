@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    font-family:AdleryBlockletter;
+    src: url("../fonts/AdleryBlockletter.ttf");
+}
+
+@font-face{
+  font-family:Aileron;
+  src: url("../fonts/Aileron-Bold.otf");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: url("../images/fondoPuntaje1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+    body {
+      background-size: cover; 
+    }
+  }
+
+  h1{
+    font-family: AdleryBlockLetter;
+    font-size: 4.5em;
+    text-align: center;
+    margin: auto;
+    margin-top: 40%;
+    margin-bottom: .4em;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  h2{
+    font-family: Aileron;
+    font-size: 1.6em;
+    background-color: white;
+    border: 4px solid red;
+    outline: 1px solid white;
+    border-radius: 12px;
+    text-decoration: none;
+    text-align: center;
+    color: red;
+    width: 60%;
+    margin: auto;
+    line-height: 2em;
+  }
+
+  .katas{
+    width: 61%;
+    margin: auto;
+    display: flex;
+  }
+
+  h3{
+    font-family: Aileron;
+    font-size: 1.6em;
+    background-color: white;
+    border: 4px solid red;
+    outline: 1px solid white;
+    border-radius: 12px;
+    text-decoration: none;
+    text-align: center;
+    color: red;
+    width: 100%;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    line-height: 2em;
+  }
+
+  .txt1{
+    width: 40%;
+    margin-right: .6em;
+}
+
+  div{
+    width: 60%;
+    margin-left: auto;
+  }
+
+  form{
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  input{
+    border: 8px solid white;
+    border-radius: 30px;
+    font-family: Aileron;
+    font-size: 2em;
+    background: none;
+    color: white;
+    width: 2.5em;
+    height: 1.8em;
+    text-align: center;
+  }
+    
+  input:focus {
+    border: 8px solid white;
+    outline: 0px solid white;
+  }
+
+  a {
+    font-family: Aileron;
+    font-size: 2em;
+    background-color: white;
+    border: 4px solid red;
+    outline: 1px solid white;
+    border-radius: 12px;
+    text-decoration: none;
+    color: red;
+    margin-left: 1em;
+    line-height: 2em;
+    transition: color .3s, border .3s, outline .3s, background-color .3s;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a:hover{
+    color: white;
+    background-color: red;
+    border: 4px solid white;
+    outline: 1px solid red;
+}
+
+button#sumar i, button#restar i {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 1.5em;
+    color: white;
+    transition: color .25s;
+}
+
+button#sumar, button#restar {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+button#sumar i:hover, button#restar i:hover {
+    color: red;
+}
+
+button[type="submit"] {
+    font-family: Aileron;
+    font-size: 2em;
+    background-color: white;
+    border: 4px solid red;
+    outline: 1px solid white;
+    border-radius: 8px;
+    text-decoration: none;
+    color: red;
+    width: 12em;
+    margin: auto;
+    line-height: 2em;
+    transition: color .3s, border .3s, outline .3s, background-color .3s;
+}
+
+button[type="submit"]:hover{
+    color: white;
+    background-color: red;
+    border: 4px solid white;
+    outline: 1px solid red;
+}
