@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const restarButton = document.getElementById("restar");
     const descalificarLink = document.getElementById("descalificar");
 
-    let descalificado = false; // Variable de estado
+    let descalificado = false;
 
     sumarButton.addEventListener("click", function () {
         if (!descalificado) {
@@ -36,9 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Función para descalificar
+    
     descalificarLink.addEventListener("click", function () {
         inputField.value = "0.0";
-        descalificado = true; // Establece la variable de estado como verdadera
+        descalificado = true;
     });
 });

@@ -15,7 +15,7 @@ class usuarios_modelo
 
     public function get_validar($usuarioN, $clave)
     {
-        $sql = "SELECT*FROM usuarios where usu$arioN='usuarioN' and clave='$clave'";
+        $sql = "SELECT*FROM usuarios where $usuarioN='usuarioN' and clave='$clave'";
         $resultado = $this->db->query($sql);
         if($resultado->num_rows == 1){
             echo "USUARIO ENCONTRADO (modelo)";
