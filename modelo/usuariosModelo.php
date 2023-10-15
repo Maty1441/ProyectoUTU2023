@@ -6,7 +6,6 @@ class usuarios_modelo
     private $db;
     private $userValidado;
 
-
     public function __construct()
     {
         $this->db = Conectar::conexion();
