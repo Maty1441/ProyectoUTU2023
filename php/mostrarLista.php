@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../vistas/assets/css/mostrarLista.css">
+    <link rel="stylesheet" href="../vista/assets/css/mostrarLista.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrador</title>
@@ -24,7 +24,7 @@
       <a href='#'>Eliminar</a>
 </div>
 <?php
-$conexion = new mysqli("127.0.0.1", "root", "", "torneo_bd", 3306);
+$conexion = new mysqli("127.0.0.1", "root", "", "torneo_bd", 33065);
 
 if ($conexion->connect_error) {
   die("Error de conexión: " . $conexion->connect_error);
