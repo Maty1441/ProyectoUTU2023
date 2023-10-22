@@ -77,7 +77,7 @@ div{
     font-size: 1.2em;
     height: 3em;
     width: 15em;
-    padding-left: 1em;
+    padding-left: 2.5em;
     margin-right: 10px;
     border-radius: 12px;
     border: 2px solid white;
@@ -106,33 +106,19 @@ div{
     font-size: 1.4em;
 }
 
-.botones{
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    margin: auto;
-    margin-top: 5em;
-}
-
 a{
-    font-family: Aileron;
-    border: 2px solid white;
-    color: white;
-    font-size: 1.6em;
-    text-align: center;
-    text-decoration: none;
-    width: 5.5em;
-    border-radius: 6px;
-    padding: 6px;
-    background-color: rgba(0, 0, 0, 0.25);
+  font-family: Aileron;
+  font-size: 1.2em;
+  color: rgb(230, 230, 230);
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 a:hover{
-    background-color: rgba(94, 23, 235, 0.5);
+    color: #5E17EB;;
   }
   
   a:focus {
-    border: 2px solid #5E17EB;
     outline: none;
   }
 
@@ -143,21 +129,23 @@ a:hover{
   /* Para cambiar el boton de la letra cuando el enlace ya ha sido visitado */
 .botones a:visited {  
     color: rgb(230, 230, 230);
+    text-decoration: none;
   }
 
   /* tabla */
   table {
     text-align: center;
     text-decoration: none;
-    color: white;
+    font-family: Aileron;
     font-size: 1em;
+    color: white;
     border-left: 2px solid #5E17EB;
     border-right: 2px solid #5E17EB;
     width: 80%;
     margin: 0 auto;
     margin-top: 10vh;
     opacity: 0.97;
-    font-family: Aileron;
+    white-space: nowrap;
   }
 
   th{
@@ -174,13 +162,3 @@ a:hover{
     border-right: 2px solid #5E17EB;
     transition: color 0.2s, border-color 0.2s; /* Agregar transición para color y borde */
   }
-
-  td:hover{
-    color: #5E17EB;
-    border-color: #5E17EB;
-  }
-
-  tr:hover{
-    color: #5E17EB;
-    border-color: #5E17EB;
-  }    

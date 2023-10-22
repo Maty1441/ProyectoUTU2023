@@ -4,7 +4,7 @@ class usuariosControlador
 {
     public function __construct()
     {
-        require_once "modelos/usuariosModelo.php";
+        require_once "modelo/usuariosModelo.php";
 }
     
     public function login()

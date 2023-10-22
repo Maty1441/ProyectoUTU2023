@@ -11,7 +11,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $database = "torneo_bd";
-$port = 3306;
+$port = 33065;
 
 $conexion = new mysqli($servername, $username, $password, $database, $port);
 

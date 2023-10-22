@@ -3,7 +3,7 @@ class conexion {
     private $conexion;
 
     public function __construct() {
-        $this->connection = new PDO("mysql:host=localhost;port=33065;dbname=torneo_bd", "root", ""); //cambiar el puerto de 33065 a 3306
+        $this->conexion = new PDO("mysql:host=localhost;port=33065;dbname=torneo_bd", "root", ""); //cambiar el puerto de 33065 a 3306
     }
 //-------------------------------------------------------------------
     //Obtengo datos de las tablas
@@ -11,7 +11,7 @@ class conexion {
     public function obtenerClasificados() {
         
         $query = "SELECT * FROM clasificados";
-        $statement = $this->connection->prepare($query);
+        $statement = $this->conexion->prepare($query);
         $statement->execute();
 
         // Devolver los resultados
@@ -21,7 +21,7 @@ class conexion {
     public function obtenerCompetencia(){
 
         $query = "SELECT * FROM competencia";
-        $statement = $this->connection->prepare($query);
+        $statement = $this->conexion->prepare($query);
         $statement->execute();
 
         return $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -30,7 +30,7 @@ class conexion {
     public function obtenerCompetidores(){
 
         $query = "SELECT * FROM competidores";
-        $statement = $this->connection->prepare($query);
+        $statement = $this->conexion->prepare($query);
         $statement->execute();
 
         return $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -39,7 +39,7 @@ class conexion {
     public function obtenerEscuela(){
 
         $query = "SELECT * FROM escuela";
-        $statement = $this->connection->prepare($query);
+        $statement = $this->conexion->prepare($query);
         $statement->execute();
 
         return $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -48,7 +48,7 @@ class conexion {
     public function obtenerJuez(){
 
         $query = "SELECT * FROM juez";
-        $statement = $this->connection->prepare($query);
+        $statement = $this->conexion->prepare($query);
         $statement->execute();
 
         return $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -57,7 +57,7 @@ class conexion {
     public function obtenerKata(){
 
         $query = "SELECT * FROM kata";
-        $statement = $this->connection->prepare($query);
+        $statement = $this->conexion->prepare($query);
         $statement->execute();
 
         return $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -66,7 +66,7 @@ class conexion {
     public function obtenerRegistro(){
 
         $query = "SELECT * FROM registro";
-        $statement = $this->connection->prepare($query);
+        $statement = $this->conexion->prepare($query);
         $statement->execute();
 
         return $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -75,7 +75,7 @@ class conexion {
     public function obtenerRoles(){
 
         $query = "SELECT * FROM roles";
-        $statement = $this->connection->prepare($query);
+        $statement = $this->conexion->prepare($query);
         $statement->execute();
 
         return $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -84,14 +84,19 @@ class conexion {
     public function obtenerUsuarios(){
 
         $query = "SELECT * FROM usuarios";
-        $statement = $this->connection->prepare($query);
+        $statement = $this->conexion->prepare($query);
+        $statement->execute();
+
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+//-------------------------------------------------------------------
+
+    public function buscar($resultado_buscador) {
+        $sql = "SELECT * FROM preconfirmado WHERE Nombre LIKE '%$resultado_buscador%'";
+        $statement = $this->conexion->prepare($sql);
         $statement->execute();
 
         return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
 }
-
-// Uso del Modelo de Acceso a Datos desde un controlador
-$databaseModel = new conexion();
-$datos = $databaseModel->obtenerDatosDeTabla();
 ?>
