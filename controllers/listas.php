@@ -1,56 +1,57 @@
 <?php
 	
-	class VehiculosController {
+	class listas {
 		
 		public function __construct(){
-			require_once "models/VehiculosModel.php";
+			require_once "models/comeptidores.php";
 		}
 		
 		public function index(){
 			
-			$vehiculos = new Vehiculos_model();
-			$data["titulo"] = "Vehiculos";
-			$data["vehiculos"] = $vehiculos->get_vehiculos();
+			$vehiculos = new competidores_Modelo();
+			$data["titulo"] = "Competidor";
+			$data["vehiculos"] = $vehiculos->get_competidor();
 			
-			require_once "views/vehiculos/vehiculos.php";	
+			require_once "views/admin/admin.html";
 		}
 		
 		public function guarda(){
 			
-			$placa = $_POST['placa'];
-			$marca = $_POST['marca'];
-			$modelo = $_POST['modelo'];
-			$anio = $_POST['anio'];
-			$color = $_POST['color'];
+			$id = $_POST['id'];
+			$ci = $_POST["Cedula"];
+			$nombre = $_POST["Nombre"];
+			$apellido = $_POST["Apellido"];
+			$edad = $_POST["Edad"];
+			$departamento = $_POST["Departamento"];
+			$genero = $_POST["Genero"];
 			
 			$vehiculos = new Vehiculos_model();
-			$vehiculos->insertar($placa, $marca, $modelo, $anio, $color);
-			$data["titulo"] = "Vehiculos";
+			$vehiculos->modificar($id, $ci, $nombre, $apellido, $edad, $departamento, $genero);
 			$this->index();
 		}
 		
-		public function modificar($id){
+//		public function modificar($id){
 			
-			$vehiculos = new Vehiculos_model();
+//			$vehiculos = new Vehiculos_model();
 			
-			$data["id"] = $id;
-			$data["vehiculos"] = $vehiculos->get_vehiculo($id);
-			$data["titulo"] = "Vehiculos";
-			require_once "views/vehiculos/vehiculos_modifica.php";
-		}
+//			$data["id"] = $id;
+//			$data["vehiculos"] = $vehiculos->get_vehiculo($id);
+//			$data["titulo"] = "Vehiculos";
+//			require_once "views/vehiculos/vehiculos_modifica.php";
+//		}
 		
 		public function actualizar(){
 
 			$id = $_POST['id'];
-			$placa = $_POST['placa'];
-			$marca = $_POST['marca'];
-			$modelo = $_POST['modelo'];
-			$anio = $_POST['anio'];
-			$color = $_POST['color'];
+			$ci = $_POST["Cedula"];
+			$nombre = $_POST["Nombre"];
+			$apellido = $_POST["Apellido"];
+			$edad = $_POST["Edad"];
+			$departamento = $_POST["Departamento"];
+			$genero = $_POST["Genero"];
 
 			$vehiculos = new Vehiculos_model();
-			$vehiculos->modificar($id, $placa, $marca, $modelo, $anio, $color);
-			$data["titulo"] = "Vehiculos";
+			$vehiculos->modificar($id, $ci, $nombre, $apellido, $edad, $departamento, $genero);
 			$this->index();
 		}
 		
@@ -58,7 +59,6 @@
 			
 			$vehiculos = new Vehiculos_model();
 			$vehiculos->eliminar($id);
-			$data["titulo"] = "Vehiculos";
 			$this->index();
 		}	
 	}

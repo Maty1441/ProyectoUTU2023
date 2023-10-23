@@ -1,6 +1,6 @@
 <?php
 	
-	define("CONTROLADOR_PRINCIPAL", "Vehiculos");
+	define("CONTROLADOR_PRINCIPAL", "Listas");
 	define("ACCION_PRINCIPAL", "index");
 	
 ?>

@@ -1,9 +1,18 @@
 <?php
+
 class conexion {
     private $conexion;
 
     public function __construct() {
         $this->conexion = new PDO("mysql:host=localhost;port=33065;dbname=torneo_bd", "root", ""); //cambiar el puerto de 33065 a 3306
+    }
+
+    //
+    public function index(){
+			
+        $data["titulo"] = "Pagina principal";
+        
+        require_once "index.php";
     }
 //-------------------------------------------------------------------
     //Obtengo datos de las tablas
