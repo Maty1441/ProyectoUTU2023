@@ -1,6 +1,6 @@
 <?php
 	
-	class Vehiculos_model {
+	class competidores_Modelo {
 		
 		private $db;
 		private $competidores;
@@ -8,6 +8,15 @@
 		public function __construct(){
 			$this->db = Conectar::conexion();
 			$this->competidores = array();
+		}
+
+		public function get_competidor($idCompetidores)
+		{
+			$sql = "SELECT * FROM competidores WHERE idCompetidores ='$idCompetidores' LIMIT 1";
+			$resultado = $this->db->query($sql);
+			$row = $resultado->fetch_assoc();
+
+			return $row;
 		}
 		
 		public function get_competidores()
@@ -37,14 +46,6 @@
 			$resultado = $this->db->query("DELETE FROM competidores WHERE id = '$id'");
 			
 		}
-		
-		public function get_competidor($id)
-		{
-			$sql = "SELECT * FROM competidores WHERE id='$id' LIMIT 1";
-			$resultado = $this->db->query($sql);
-			$row = $resultado->fetch_assoc();
-
-			return $row;
-		}
+	
 	} 
 ?>

@@ -1,16 +1,16 @@
 <?php
 	
-	class listas {
+	class ListasController {
 		
 		public function __construct(){
-			require_once "models/comeptidores.php";
+			require_once "models/competidoresModelo.php";
 		}
 		
 		public function index(){
 			
-			$vehiculos = new competidores_Modelo();
+			$Competidor = new competidores_Modelo();
 			$data["titulo"] = "Competidor";
-			$data["vehiculos"] = $vehiculos->get_competidor();
+			$data["Competidor"] = $Competidor->get_competidores();
 			
 			require_once "views/admin/admin.html";
 		}
@@ -25,14 +25,14 @@
 			$departamento = $_POST["Departamento"];
 			$genero = $_POST["Genero"];
 			
-			$vehiculos = new Vehiculos_model();
-			$vehiculos->modificar($id, $ci, $nombre, $apellido, $edad, $departamento, $genero);
+			$Competidor = new competidores_Modelo();
+			$Competidor->modificar($id, $ci, $nombre, $apellido, $edad, $departamento, $genero);
 			$this->index();
 		}
 		
 //		public function modificar($id){
 			
-//			$vehiculos = new Vehiculos_model();
+//			$vehiculos = new competidores_Modelo();
 			
 //			$data["id"] = $id;
 //			$data["vehiculos"] = $vehiculos->get_vehiculo($id);
@@ -50,15 +50,15 @@
 			$departamento = $_POST["Departamento"];
 			$genero = $_POST["Genero"];
 
-			$vehiculos = new Vehiculos_model();
-			$vehiculos->modificar($id, $ci, $nombre, $apellido, $edad, $departamento, $genero);
+			$Competidor = new competidores_Modelo();
+			$Competidor->modificar($id, $ci, $nombre, $apellido, $edad, $departamento, $genero);
 			$this->index();
 		}
 		
 		public function eliminar($id){
 			
-			$vehiculos = new Vehiculos_model();
-			$vehiculos->eliminar($id);
+			$Competidor = new competidores_Modelo();
+			$Competidor->eliminar($id);
 			$this->index();
 		}	
 	}

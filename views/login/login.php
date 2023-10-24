@@ -22,7 +22,7 @@
         </button><br><br>
 </form>
 <nav class="volver">
-    <a href="../../index.html"><button class="btn1">
+    <a href="index.php?c=Usuarios&a=index"><button class="btn1">
         <span class="transition"></span>
         <span class="gradient"></span>
         <span class="label">Volver</span>

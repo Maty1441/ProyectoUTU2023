@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../../assets/css/formulario.css">
+    <link rel="stylesheet" href="assets/css/formulario.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
@@ -21,7 +21,8 @@
             <input type="date" id="fNac" name="Edad" placeholder="DD/MM/AAAA" min="1900-01-01" max="2099-12-31"><br><br>
     
             <label for="cedula">Cedula:</label>
-            <input type="number" id="ci" name="Cedula" value="" placeholder="C.I" min="1" max="10000000"><br><br>
+            <input type="text" id="ci" name="Cedula" value="" placeholder="C.I" oninput="validarNumero(this)"><br><br>
+            <script src="../../assets/js/form.js"></script>
     
             <label for="departamento">Departamento:</label>
             <select id="dep" name="Departamento">
@@ -61,7 +62,7 @@
             </button></div><br><br>
         </form>
         <nav class="volver">
-            <a href="../../index.html"><button class="btn1">
+            <a href="index.php?c=Usuarios&a=index"><button class="btn1">
                 <span class="transition"></span>
                 <span class="gradient"></span>
                 <span class="label">Volver</span>

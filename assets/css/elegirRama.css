@@ -52,6 +52,10 @@ div{
     width: 95%;
 }
 
+.fotos img{
+    width: fit-content;
+}
+
 .textos{
     display: flex;
     justify-content: space-around;
