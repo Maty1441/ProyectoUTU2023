@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../../assets/css/admin.css">
+    <link rel="stylesheet" href="assets/css/admin.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrador</title>
@@ -15,7 +15,7 @@
 
     <div class="opciones">
         <button class="btn">
-            <a href="index.php?c=usuarios&a=listaCompetidores">MOSTRAR LISTA PARTICIPANTES</a>
+            <a href="index.php?c=Usuarios&a=listaCompetidores">MOSTRAR LISTA PARTICIPANTES</a>
         </button><br>
         <button class="btn">
             <a href="#">COMBATIENTES ELIMINADOS</a>

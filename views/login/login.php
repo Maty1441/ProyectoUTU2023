@@ -28,5 +28,12 @@
         <span class="label">Volver</span>
     </button></a>
 </nav>
+<nav class="volver">
+    <a href="index.php?c=Usuarios&a=admin"><button class="btn1">
+        <span class="transition"></span>
+        <span class="gradient"></span>
+        <span class="label">Pasar</span>
+    </button></a>
+</nav>
 </body>
 </html>

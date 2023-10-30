@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../../assets/css/listaParticipantes.css">
+    <link rel="stylesheet" href="assets/css/listaParticipantes.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrador</title>
+    <title><?php echo $data["titulo"]; ?></title>
 </head>
 <body>
 <div class="arriba">
@@ -17,54 +17,37 @@
   </form>
 </div>
 </div>
-<?php
-  echo "<table border='0'>
-          <tr class='primera-fila'>
-            <th class='nom'>NOMBRE COMPLETO</th>
-            <th>RAMA</th>
-            <th>CEDULA</th>
-            <th>AGREGAR</th>
-            <th>MODIFICAR</th>
-            <th>ELIMINAR</th>
-          </tr>";
-
-    echo "<tr>
-            <td>NOOOO LEWIS</td>
-            <td>PORQUE TE</td>
-            <td>FUISTES</td>";
-        echo "<td><a href=# >AGREGAR</a></td>";
-              //'index.php?c=vehiculos&a=nuevo".$dato["id"]."' class='btn btn-warning'>AGREGAR</a></td>";
-        echo "<td><a href=# >MODIFICAR</a></td>";
-              //'index.php?c=vehiculos&a=modificar&id=".$dato["id"]."' class='btn btn-warning'>MODIFICAR</a></td>";
-        echo "<td><a href=# >ELIMINAR</a></td>";
-              //'index.php?c=vehiculos&a=eliminar&id=".$dato["id"]."' class='btn btn-danger'>ELIMINAR</a></td>";
-        echo "</tr>";
-
-    echo "<tr>
-            <td>NOOOO LEWIS</td>
-            <td>PORQUE TE</td>
-            <td>FUISTES</td>";
-        echo "<td><a href=# >AGREGAR</a></td>";
-              //'index.php?c=vehiculos&a=nuevo".$dato["id"]."' class='btn btn-warning'>AGREGAR</a></td>";
-        echo "<td><a href=# >MODIFICAR</a></td>";
-              //'index.php?c=vehiculos&a=modificar&id=".$dato["id"]."' class='btn btn-warning'>MODIFICAR</a></td>";
-        echo "<td><a href=# >ELIMINAR</a></td>";
-              //'index.php?c=vehiculos&a=eliminar&id=".$dato["id"]."' class='btn btn-danger'>ELIMINAR</a></td>";
-        echo "</tr>";
-          
-    echo "<tr>
-            <td>NOOOO LEWIS</td>
-            <td>PORQUE TE</td>
-            <td>FUISTES</td>";
-        echo "<td><a href=# >AGREGAR</a></td>";
-              //'index.php?c=vehiculos&a=nuevo".$dato["id"]."' class='btn btn-warning'>AGREGAR</a></td>";
-        echo "<td><a href=# >MODIFICAR</a></td>";
-              //'index.php?c=vehiculos&a=modificar&id=".$dato["id"]."' class='btn btn-warning'>MODIFICAR</a></td>";
-        echo "<td><a href=# >ELIMINAR</a></td>";
-              //'index.php?c=vehiculos&a=eliminar&id=".$dato["id"]."' class='btn btn-danger'>ELIMINAR</a></td>";
-        echo "</tr>";
-
-  echo "</table>";
-?>
+      <table border="1" width="80%" class="table">
+	      <thead>
+	      	<tr>
+                        <th>Nombre</th>
+			      <th>Apellido</th>
+			      <th>Fecha de Nacimiento</th>
+			      <th>Cedula</th>
+			      <th>Departamento</th>
+			      <th>Genero</th>
+			      <th>Agregar</th>
+			      <th>Modificar</th>
+			      <th>Eliminar</th>
+	      	</tr>
+	      </thead>
+                  
+            <tbody>
+            <?php foreach($data["competidores"] as $dato) {
+                      echo "<tr>";
+                      echo "<td>".$dato["Nombre"] . "</td>";
+                      echo "<td>".$dato["Apellido"] . "</td>";
+                      echo "<td>".$dato["fecha_nacimiento"] . "</td>";
+                      echo "<td>".$dato["ci"] . "</td>";
+                      echo "<td>".$dato["departemento"] . "</td>";
+                      echo "<td>".$dato["genero"] . "</td>";
+                      echo "<td><a href='index.php?c=vehiculos&a=nuevo&id=" . $dato["idCompetidores"] . "'>Agregar</a></td>";
+                      echo "<td><a href='index.php?c=vehiculos&a=modificar&id=" . $dato["idCompetidores"] . "'>Modificar</a></td>";
+                      echo "<td><a href='index.php?c=vehiculos&a=eliminar&id=" . $dato["idCompetidores"] . "'>Eliminar</a></td>";
+                      echo "</tr>";
+                  }
+            ?>
+            </tbody>
+      </table>
 </body>
 </html>

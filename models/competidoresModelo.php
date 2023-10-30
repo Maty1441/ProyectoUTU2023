@@ -12,7 +12,7 @@
 
 		public function get_competidor($idCompetidores)
 		{
-			$sql = "SELECT * FROM competidores WHERE idCompetidores ='$idCompetidores' LIMIT 1";
+			$sql = "SELECT * FROM competidor WHERE idCompetidores ='$idCompetidores' LIMIT 1";
 			$resultado = $this->db->query($sql);
 			$row = $resultado->fetch_assoc();
 
@@ -21,7 +21,7 @@
 		
 		public function get_competidores()
 		{
-			$sql = "SELECT * FROM competidores";
+			$sql = "SELECT * FROM competidor";
 			$resultado = $this->db->query($sql);
 			while($row = $resultado->fetch_assoc())
 			{

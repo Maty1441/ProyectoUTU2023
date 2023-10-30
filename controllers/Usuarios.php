@@ -27,6 +27,17 @@ public function index(){
         require "views/formulario/formulario.html";
     }
 
+    public function admin()
+{
+        require "views/admin/admin.php";
+    }
+
+    public function listaCompetidores()
+{
+        $data["titulo"] = "Lista de Participantes";
+
+        require "views/listas/listaParticipantes.php";
+    }
 
     public function validar()
 {

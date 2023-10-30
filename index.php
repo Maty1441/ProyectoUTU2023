@@ -4,7 +4,6 @@
 require_once "config/config.php"; // Incluir archivo de configuración
 require_once "core/routes.php"; // Incluir archivo de rutas
 require_once "config/database.php"; // Incluir archivo de configuración de la base de datos
-// require_once "controllers/conexion.php"; // Incluir archivo del controlador de Conexion
 require_once "controllers/Usuarios.php"; // Incluir archivo del controlador de Usuarios
 
 // Se verifica si se ha proporcionado un parámetro 'c' en la URL
