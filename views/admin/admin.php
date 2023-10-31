@@ -18,7 +18,7 @@
             <a href="index.php?c=Usuarios&a=listaCompetidores">MOSTRAR LISTA PARTICIPANTES</a>
         </button><br>
         <button class="btn">
-            <a href="#">COMBATIENTES ELIMINADOS</a>
+            <a href="index.php?c=Usuarios&a=listaEliminados">COMBATIENTES ELIMINADOS</a>
         </button><br>
         <button class="btn">
             <a href="#">COMBATIENTES CONFIRMADOS</a>

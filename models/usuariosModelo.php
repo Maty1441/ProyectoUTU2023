@@ -1,6 +1,6 @@
 <?php
 
-class usuarios_model
+class usuarios_Modelo
 {
 
     private $db;
@@ -10,7 +10,10 @@ class usuarios_model
     {
         $this->db = Conectar::conexion();
         $this->userValidado = array();
+        $this->competidores = array();
     }
+
+    
 
     public function get_validar($usuarioN, $clave)
     {
@@ -27,5 +30,16 @@ class usuarios_model
             return false;
         }
     }
+
+    public function get_competidores()
+		{
+			$sql = "SELECT * FROM competidor";
+			$resultado = $this->db->query($sql);
+			while($row = $resultado->fetch_assoc())
+			{
+				$this->competidores[] = $row;
+			}
+			return $this->competidores;
+		}
 }
 ?>

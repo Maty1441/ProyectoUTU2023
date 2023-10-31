@@ -20,7 +20,7 @@
       <table border="1" width="80%" class="table">
 	      <thead>
 	      	<tr>
-                        <th>Nombre</th>
+            <th>Nombre</th>
 			      <th>Apellido</th>
 			      <th>Fecha de Nacimiento</th>
 			      <th>Cedula</th>
@@ -33,15 +33,15 @@
 	      </thead>
                   
             <tbody>
-            <?php foreach($data["competidores"] as $dato) {
+            <?php foreach($data["Competidor"] as $dato) {
                       echo "<tr>";
-                      echo "<td>".$dato["Nombre"] . "</td>";
-                      echo "<td>".$dato["Apellido"] . "</td>";
+                      echo "<td>".$dato["nombre"] . "</td>";
+                      echo "<td>".$dato["apellido"] . "</td>";
                       echo "<td>".$dato["fecha_nacimiento"] . "</td>";
                       echo "<td>".$dato["ci"] . "</td>";
-                      echo "<td>".$dato["departemento"] . "</td>";
+                      echo "<td>".$dato["departamento"] . "</td>";
                       echo "<td>".$dato["genero"] . "</td>";
-                      echo "<td><a href='index.php?c=vehiculos&a=nuevo&id=" . $dato["idCompetidores"] . "'>Agregar</a></td>";
+                      echo "<td><a href='index.php?c=listas&a=nuevo&id=" . $dato["idCompetidores"] . "'>Agregar</a></td>";
                       echo "<td><a href='index.php?c=vehiculos&a=modificar&id=" . $dato["idCompetidores"] . "'>Modificar</a></td>";
                       echo "<td><a href='index.php?c=vehiculos&a=eliminar&id=" . $dato["idCompetidores"] . "'>Eliminar</a></td>";
                       echo "</tr>";

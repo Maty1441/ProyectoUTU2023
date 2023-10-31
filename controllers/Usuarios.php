@@ -9,7 +9,7 @@ class UsuariosController
 }
 
 public function index(){
-    require_once "views/paginaPrincipal/paginaPrincipal.html";
+    require_once "views/paginaPrincipal/paginaPrincipal.php";
 }
     
     public function login()
@@ -34,14 +34,23 @@ public function index(){
 
     public function listaCompetidores()
 {
+        $Competidor = new usuarios_Modelo();
         $data["titulo"] = "Lista de Participantes";
+        $data["Competidor"] = $Competidor->get_competidores();
 
         require "views/listas/listaParticipantes.php";
     }
 
+    public function listaEliminados()
+{
+        $data["titulo"] = "Lista de Eliminados";
+
+        require "views/listas/listaEliminados.php";
+    }
+
     public function validar()
 {
-    $usuario = new usuarios_model();
+    $usuario = new usuarios_Modelo();
     $usuarioN = $_POST['usuarioN'];
     $clave = $_POST['clave'];
     $data["usuario"] = $usuario-> get_validar($usuarioN, $clave);
