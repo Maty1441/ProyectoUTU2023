@@ -13,8 +13,6 @@ class usuarios_Modelo
         $this->competidores = array();
     }
 
-    
-
     public function get_validar($usuarioN, $clave)
     {
         $sql = "SELECT*FROM usuarios where $usuarioN='usuarioN' and clave='$clave'";

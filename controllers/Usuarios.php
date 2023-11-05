@@ -5,7 +5,7 @@ class UsuariosController
 
     public function __construct()
     {
-        require_once "models/usuariosModelo.php";
+        require_once "models/competidoresModelo.php";
 }
 
 public function index(){
@@ -34,7 +34,7 @@ public function index(){
 
     public function listaCompetidores()
 {
-        $Competidor = new usuarios_Modelo();
+        $Competidor = new competidores_Modelo();
         $data["titulo"] = "Lista de Participantes";
         $data["Competidor"] = $Competidor->get_competidores();
 

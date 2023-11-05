@@ -41,7 +41,6 @@
                       echo "<td>".$dato["ci"] . "</td>";
                       echo "<td>".$dato["departamento"] . "</td>";
                       echo "<td>".$dato["genero"] . "</td>";
-                      echo "<td><a href='index.php?c=listas&a=nuevo&id=" . $dato["idCompetidores"] . "'>Agregar</a></td>";
                       echo "<td><a href='index.php?c=listas&a=modificar&id=" . $dato["idCompetidores"] . "'>Modificar</a></td>";
                       echo "<td><a href='index.php?c=vehiculos&a=eliminar&id=" . $dato["idCompetidores"] . "'>Eliminar</a></td>";
                       echo "</tr>";

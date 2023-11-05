@@ -14,6 +14,25 @@
 			
 			require_once "views/admin/admin.html";
 		}
+
+		public function listaParticipantes(){
+
+			$Competidor = new competidores_Modelo();
+			$data["titulo"] = "Lista de Participantes";
+			$data["Competidor"] = $Competidor->get_competidores();
+		
+			require "views/listas/listaParticipantes.php";
+		}
+
+		public function listaClasificados(){
+
+			$Competidor = new competidores_Modelo();
+			$data["titulo"] = "Lista de Participantes";
+			$data["Competidor"] = $Competidor->get_clasificados();
+		
+			require "views/listas/listaParticipantes.php";
+		}
+		
 		
 		public function guarda(){
 			
@@ -30,15 +49,13 @@
 			$this->index();
 		}
 		
-//		public function modificar($id){
-			
-//			$vehiculos = new competidores_Modelo();
-			
-//			$data["id"] = $id;
-//			$data["vehiculos"] = $vehiculos->get_vehiculo($id);
-//			$data["titulo"] = "Vehiculos";
-//			require_once "views/vehiculos/vehiculos_modifica.php";
-//		}
+		public function modificar($id){			
+			$vehiculos = new competidores_Modelo();			
+			$data["id"] = $id;
+			$data["vehiculos"] = $vehiculos->get_competidores($id);
+			$data["titulo"] = "Vehiculos";
+			require_once "views/vehiculos/vehiculos_modifica.php";
+		}
 		
 		public function actualizar(){
 

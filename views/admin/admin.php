@@ -15,13 +15,13 @@
 
     <div class="opciones">
         <button class="btn">
-            <a href="index.php?c=Usuarios&a=listaCompetidores">MOSTRAR LISTA PARTICIPANTES</a>
+            <a href="index.php?c=listas&a=listaParticipantes">MOSTRAR LISTA PARTICIPANTES</a>
         </button><br>
         <button class="btn">
-            <a href="index.php?c=Usuarios&a=listaEliminados">COMBATIENTES ELIMINADOS</a>
+            <a href="index.php?c=listas&a=listaEliminados">COMBATIENTES ELIMINADOS</a>
         </button><br>
         <button class="btn">
-            <a href="#">COMBATIENTES CONFIRMADOS</a>
+            <a href="index.php?c=listas&a=listaClasificados">COMBATIENTES CONFIRMADOS</a>
         </button><br>
         <button class="btn">
             <a href="#">EDITAR PUNTUACION DE JUECES</a>

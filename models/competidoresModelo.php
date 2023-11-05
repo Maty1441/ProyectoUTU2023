@@ -29,6 +29,17 @@
 			}
 			return $this->competidores;
 		}
+
+		public function get_clasificados()
+		{
+			$sql = "SELECT competidor.* FROM competidor INNER JOIN clasificados ON competidor.idcompetidores = clasificados.idcompetidores;";
+			$resultado = $this->db->query($sql);
+			while($row = $resultado->fetch_assoc())
+			{
+				$this->competidores[] = $row;
+			}
+			return $this->competidores;
+		}
 		
 		public function insertar($nombre, $apellido, $fNac, $cedula, $departamento, $genero){
 			
