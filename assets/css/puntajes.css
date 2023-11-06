@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0,0,0, .5)), url("../images/fondoClasificados.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@font-face{
+    font-family:AdleryBlockletter;
+    src: url("../fonts/AdleryBlockletter.ttf");
+}
+
+@font-face{
+    font-family:playPenSans-negrita;
+    src: url("../fonts/PlaypenSans-negrita.ttf");
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top: .75em;
+    font-size: 5em;
+    font-family: AdleryBlockletter;
+}
+
+table {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.primeraFila {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.80);
+    border-top: 3px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-size: 3em;
+    font-family: AdleryBlockletter;
+}
+
+th, td {
+    padding: 8px 10px;
+    width: 33.33%;
+    background-color: none;
+    color: rgb(230, 230, 230);
+}
+
+.tabla{
+    font-size: 1.8em;
+    font-family: playPenSans-negrita;
+}

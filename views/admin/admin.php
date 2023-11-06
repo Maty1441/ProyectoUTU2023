@@ -22,6 +22,9 @@
         </button><br>
         <button class="btn">
             <a href="index.php?c=Usuarios&a=juez">EDITAR PUNTUACION DE JUECES</a>
+        </button><br>
+        <button class="btn">
+            <a href="index.php?c=listas&a=listaPuntajes">TABLA DE PUNTUACIONES</a>
         </button>
     </div>
 </body>

@@ -4,7 +4,7 @@ class conexion {
     private $conexion;
 
     public function __construct() {
-        $this->conexion = new PDO("mysql:host=localhost;port=3306;dbname=torneo_bd", "root", ""); //cambiar el puerto de 33065 a 3306
+        $this->conexion = new PDO("mysql:host=localhost;port=33065;dbname=torneo_bd", "root", ""); //cambiar el puerto de 33065 a 3306
     }
 
     //

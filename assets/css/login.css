@@ -145,6 +145,10 @@ button {
     margin-bottom: 4vh;
   }
 
+  .altura{
+    border: 2px solid red;
+  }
+
   nav{
     text-align: center;
     justify-content: center;

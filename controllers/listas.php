@@ -43,6 +43,16 @@
 			require "views/listas/listaClasificados.php";
 		}
 
+		public function listaPuntajes(){
+
+			$Competidor = new competidores_Modelo();
+			$data["titulo"] = "Lista de Puntajes";
+			$data["Competidor"] = $Competidor->get_puntajes_ordenados();
+
+			require "views/listas/listaPuntajes.php";
+
+		}
+
 		// --------- ↑ Funciones para cargar TABLAS ↑ --------- //
 
 		// --------- ↓ Funciones de tabla "COMPETIDOR" ↓ --------- //

@@ -40,6 +40,23 @@
 			}
 			return $this->competidores;
 		}
+
+		public function get_puntajes_ordenados(){
+
+			$sql = "SELECT competidor.nombre, puntaje.puntajeRonda, RANK() OVER (ORDER BY puntaje.puntajeRonda DESC) AS posicion
+			FROM competidor
+			INNER JOIN clasificados ON competidor.idCompetidores = clasificados.idCompetidores
+			INNER JOIN puntaje ON clasificados.idClasificados = puntaje.idClasificados
+			ORDER BY puntaje.puntajeRonda DESC;";
+
+			$resultado = $this->db->query($sql);
+			while($row = $resultado->fetch_assoc())
+			{
+				$this->competidores[] = $row;
+			}
+			return $this->competidores;
+
+		}
 		
 		public function agregar($id){
 			
