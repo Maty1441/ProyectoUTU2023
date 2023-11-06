@@ -28,7 +28,6 @@
 			      <th>Genero</th>
 			      <th>Agregar</th>
 			      <th>Modificar</th>
-			      <th>Eliminar</th>
 	      	</tr>
 	      </thead>
                   
@@ -42,7 +41,7 @@
                       echo "<td>".$dato["departamento"] . "</td>";
                       echo "<td>".$dato["genero"] . "</td>";
                       echo "<td><a href='index.php?c=listas&a=modificar&id=" . $dato["idCompetidores"] . "'>Modificar</a></td>";
-                      echo "<td><a href='index.php?c=vehiculos&a=eliminar&id=" . $dato["idCompetidores"] . "'>Eliminar</a></td>";
+                      echo "<td><a href='index.php?c=listas&a=eliminarClasificados&id=" . $dato["idCompetidores"] . "'>Eliminar</a></td>";
                       echo "</tr>";
                   }
             ?>

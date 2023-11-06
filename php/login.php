@@ -3,7 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "torneo_bd";
-$port = 3306;
+$port = 33065;
 
 $conn = new mysqli($servername, $username, $password, $dbname, $port);
 

@@ -20,11 +20,11 @@ if ($conexion->connect_error) {
   die("Error de conexión: " . $conexion->connect_error);
 }
 
-$consulta = "SELECT competidores.nombre, registro.puntajeRonda, RANK() OVER (ORDER BY registro.puntajeRonda DESC) AS posicion
+$consulta = "SELECT competidores.nombre, puntaje.puntajeRonda, RANK() OVER (ORDER BY puntaje.puntajeRonda DESC) AS posicion
 FROM competidores
 INNER JOIN clasificados ON competidores.idcompetidores = clasificados.idcompetidores
-INNER JOIN registro ON clasificados.idClasificados = registro.idClasificados
-ORDER BY registro.puntajeRonda DESC;";
+INNER JOIN puntaje ON clasificados.idClasificados = puntaje.idClasificados
+ORDER BY puntaje.puntajeRonda DESC;";
 $resultado = $conexion->query($consulta);
 
 if ($resultado->num_rows > 0) {
@@ -45,7 +45,7 @@ if ($resultado->num_rows > 0) {
   }
   echo "</table>";
 } else {
-  echo "No se encontraron registros.";
+  echo "No se encontraron puntajes.";
 }
 $conexion->close();
 ?>

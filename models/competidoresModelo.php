@@ -10,7 +10,7 @@
 			$this->competidores = array();
 		}
 
-		public function get_competidor($idCompetidores)
+		public function get_competidor_por_id($idCompetidores)
 		{
 			$sql = "SELECT * FROM competidor WHERE idCompetidores ='$idCompetidores' LIMIT 1";
 			$resultado = $this->db->query($sql);
@@ -41,20 +41,32 @@
 			return $this->competidores;
 		}
 		
-		public function insertar($nombre, $apellido, $fNac, $cedula, $departamento, $genero){
+		public function agregar($id){
 			
-			$resultado = $this->db->query("INSERT INTO competidores ( nombre, apellido, fNac, cedula, departamento, genero) VALUES ('$nombre', '$apellido', '$fNac', '$cedula', '$departamento', '$genero')");
+			$resultado = $this->db->query("INSERT INTO clasificados (idCompetidores) VALUES ('$id');");
 			
 		}
-		
-		public function modificar($id, $nombre, $apellido, $fNac, $cedula, $departamento, $genero){
+
+		public function insertar($nombre, $apellido, $fNac, $cedula, $departamento, $genero){
 			
-			$resultado = $this->db->query("UPDATE competidores SET nombre='$nombre', apellido='$apellido', fNac='$fNac', cedula='$cedula', departamento='$departamento', genero='$genero' WHERE id = '$id'");			
+			$resultado = $this->db->query("INSERT INTO competidor (nombre, apellido, fecha_nacimiento, cedula, departamento, genero) VALUES ('$nombre', '$apellido', '$fNac', '$cedula', '$departamento', '$genero')");
+	
+		}
+		
+		public function modificar($id, $nombre, $apellido, $edad, $cedula, $departamento, $genero){
+			
+			$resultado = $this->db->query("UPDATE competidor SET nombre='$nombre', apellido='$apellido', fecha_nacimiento='$edad', cedula='$cedula', departamento='$departamento', genero='$genero' WHERE id = '$id'");
 		}
 		
 		public function eliminar($id){
 			
-			$resultado = $this->db->query("DELETE FROM competidores WHERE id = '$id'");
+			$resultado = $this->db->query("DELETE FROM competidor WHERE idCompetidores = '$id'");
+			
+		}
+
+		public function eliminarClasificados($id){
+			
+			$resultado = $this->db->query("DELETE FROM clasificados WHERE idCompetidores = '$id'");
 			
 		}
 	

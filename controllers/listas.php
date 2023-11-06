@@ -15,24 +15,114 @@
 			require_once "views/admin/admin.html";
 		}
 
-		public function listaParticipantes(){
+		public function admin(){
 
 			$Competidor = new competidores_Modelo();
-			$data["titulo"] = "Lista de Participantes";
+			$data["titulo"] = "Administrador";
+		
+			require "views/admin/admin.php";
+		}
+
+		// --------- ↓ Funciones para cargar TABLAS ↓ --------- //
+
+		public function listaCompetidores(){
+
+			$Competidor = new competidores_Modelo();
+			$data["titulo"] = "Lista de Competidores";
 			$data["Competidor"] = $Competidor->get_competidores();
 		
-			require "views/listas/listaParticipantes.php";
+			require "views/listas/listaCompetidores.php";
 		}
 
 		public function listaClasificados(){
 
 			$Competidor = new competidores_Modelo();
-			$data["titulo"] = "Lista de Participantes";
+			$data["titulo"] = "Lista de Clasificados";
 			$data["Competidor"] = $Competidor->get_clasificados();
 		
-			require "views/listas/listaParticipantes.php";
+			require "views/listas/listaClasificados.php";
+		}
+
+		// --------- ↑ Funciones para cargar TABLAS ↑ --------- //
+
+		// --------- ↓ Funciones de tabla "COMPETIDOR" ↓ --------- //
+
+		public function agregar($id){
+
+			$competidores = new competidores_Modelo();
+			$competidores->agregar($id);
+			$data["titulo"] = "Agregar";
+			$this->listaCompetidores();
+		}
+
+		public function actualizarCompetidor($id, $nombre, $apellido, $edad, $cedula, $departamento, $genero){
+
+			$ci = $_POST["cedula"];
+			$nombre = $_POST["nombre"];
+			$apellido = $_POST["apellido"];
+			$edad = $_POST["edad"];
+			$departamento = $_POST["departamento"];
+			$genero = $_POST["genero"];
+
+			$Competidor = new competidores_Modelo();
+			$Competidor->modificar($id, $ci, $nombre, $apellido, $edad, $departamento, $genero);
+			$data["titulo"] = "Actualizar";
+			$this->index();
+		}
+
+		public function modificar($id){			
+			$Competidor = new competidores_Modelo();			
+			$data["idCompetidor"] = $id;
+			$data["Competidor"] = $Competidor->get_competidor_por_id($id);
+			$data["titulo"] = "Modificar Competidor";
+			require_once "views/listas/listaModificarCompetidor.php";
+		}
+
+		
+		public function eliminar($id){
+			
+			$competidores = new competidores_Modelo();
+			$competidores->eliminar($id);
+			$data["titulo"] = "Eliminar";
+
+			$this->listaCompetidores();
+		}	
+
+		// --------- ↑ Funciones de tabla "COMPETIDOR" ↑ --------- //
+		
+		// --------- ↓ Funciones de tabla "CLASIFICADOS" ↓ --------- //
+		
+		public function actualizarClasificado($id){
+
+			$ci = $_POST["Cedula"];
+			$nombre = $_POST["Nombre"];
+			$apellido = $_POST["Apellido"];
+			$edad = $_POST["Edad"];
+			$departamento = $_POST["Departamento"];
+			$genero = $_POST["Genero"];
+
+			$Competidor = new competidores_Modelo();
+			$Competidor->modificar($ci, $nombre, $apellido, $edad, $departamento, $genero);
+			$this->index();
+		}
+
+		public function modificarClasificados($id){			
+			$vehiculos = new competidores_Modelo();			
+			$data["id"] = $id;
+			$data["vehiculos"] = $vehiculos->get_competidores($id);
+			$data["titulo"] = "Vehiculos";
+			require_once "views/vehiculos/vehiculos_modifica.php";
+		}
+
+		public function eliminarClasificados($id){
+			
+			$competidores = new competidores_Modelo();
+			$competidores->eliminarClasificados($id);
+			$data["titulo"] = "Eliminar";
+			$this->listaClasificados();
 		}
 		
+		// --------- ↑ Funciones de tabla "CLASIFICADOS" ↑ --------- //
 		
 		public function guarda(){
 			
@@ -49,34 +139,5 @@
 			$this->index();
 		}
 		
-		public function modificar($id){			
-			$vehiculos = new competidores_Modelo();			
-			$data["id"] = $id;
-			$data["vehiculos"] = $vehiculos->get_competidores($id);
-			$data["titulo"] = "Vehiculos";
-			require_once "views/vehiculos/vehiculos_modifica.php";
-		}
-		
-		public function actualizar(){
-
-			$id = $_POST['id'];
-			$ci = $_POST["Cedula"];
-			$nombre = $_POST["Nombre"];
-			$apellido = $_POST["Apellido"];
-			$edad = $_POST["Edad"];
-			$departamento = $_POST["Departamento"];
-			$genero = $_POST["Genero"];
-
-			$Competidor = new competidores_Modelo();
-			$Competidor->modificar($id, $ci, $nombre, $apellido, $edad, $departamento, $genero);
-			$this->index();
-		}
-		
-		public function eliminar($id){
-			
-			$Competidor = new competidores_Modelo();
-			$Competidor->eliminar($id);
-			$this->index();
-		}	
 	}
 ?>
