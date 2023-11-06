@@ -19,31 +19,14 @@ body{
   src: url("../fonts/Aileron-Bold.otf");
 }
 
-h1{
-    text-align: center;
-    justify-content: flex;
-    color: white;
-    margin-top: 6vh;
-    font-size: 22vh;
-    font-family: AdleryBlockletter;
-}
-.colorLetraK {
-    color: #D42F32;
-}
-
-h2{
-    text-align: center;
-    justify-content: flex;
-    font-size: 5vh;
-    margin-top: -15vh;
-    color: white;
-    font-family: Aileron;
+.logo{
+  width: 100%;
+  margin-top: 0.5em;
 }
 
 h3{
     text-align: center;
-    font-size: 3.5vh;
-    margin-top: 3em;
+    font-size: 1.5em;
     color: white;
     font-family: Aileron;
 }
@@ -104,10 +87,11 @@ input[type="text"]:focus{
 button {
     text-align: center;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: 2.2vh;
-    font-weight: 500;
-    width: 20vh;
-    background-color: #D42F32;
+    font-size: 1.2em;
+    font-weight: 200;
+    width: 10em;
+    height: 3em;
+    background-color: rgba(218, 165, 32, 0.750);
     color: #FFFFFF;
     border: none;
     position: relative;

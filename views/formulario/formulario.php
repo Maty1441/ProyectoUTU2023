@@ -4,29 +4,28 @@
     <link rel="stylesheet" href="assets/css/formulario.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $data["titulo"]; ?></title>
+    <title>Formulario</title>
 </head>
 <body>
-        <form action="index.php?c=listas&a=actualizarCompetidor" target="_blank" method="POST" name="modCompetidor">
-        <input type="hidden" name="id" value="<?php echo $data ["Competidor"]["idCompetidores"]?>">
+        <form action="index.php?c=Usuarios&a=enviarFormulario" target="_blank" method="post">
         <div class="logo">
-            <img src="assets/images/logo.svg" width="220px" height="220px">
+            <img src="assets/images/logo.svg" width="300px" height="300px">
         </div>
-           <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="Nombre" value="<?php echo $data["Competidor"]["nombre"]?>" placeholder="Nombre"><br><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="Nombre" value="" placeholder="Nombre" maxlength="50"><br><br>
         
             <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="Apellido" value="<?php echo $data["Competidor"]["apellido"]?>" placeholder="Apellido"><br><br>
+            <input type="text" id="apellido" name="Apellido" value="" placeholder="Apellido" maxlength="50"><br><br>
 
             <label for="fNac">Fecha de nacimiento:</label>
-            <input type="date" id="edad" name="Edad" value="<?php echo $data["Competidor"]["fecha_nacimiento"]?>"><br><br>
+            <input type="date" id="edad" name="Edad" placeholder="DD/MM/AAAA" min="1900-01-01" max="2011-11-13"><br><br>
     
             <label for="cedula">Cedula:</label>
-            <input type="text" id="ci" name="Cedula" value="<?php echo $data["Competidor"]["ci"]?>" placeholder="C.I" oninput="validarNumero(this)"><br><br>
-            <script src="assets/js/form.js"></script>
+            <input type="text" id="ci" name="Cedula" value="" placeholder="C.I" oninput="validarNumero(this)"><br><br>
+            <script src="../../assets/js/form.js"></script>
     
             <label for="departamento">Departamento:</label>
-            <select id="departamento" name="Departamento" value="<?php echo $data["Competidor"]["departamento"]?>">
+            <select id="departamento" name="Departamento">
             <option value="Artigas">Artigas</option>
             <option value="Canelones">Canelones</option>
             <option value="Cerro Largo">Cerro Largo</option>
@@ -49,7 +48,7 @@
             </select><br><br>
 
             <label for="genero">Genero:</label>
-            <select id="genero" name="Genero" value="<?php echo $data["Competidor"]["genero"]?>">
+            <select id="genero" name="Genero">
                 <option value="Femenino">Femenino</option>
                 <option value="Masculino">Masculino</option>
                 <option value="Otro">Otro</option>

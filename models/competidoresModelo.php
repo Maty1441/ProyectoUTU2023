@@ -55,7 +55,7 @@
 		
 		public function modificar($id, $nombre, $apellido, $edad, $cedula, $departamento, $genero){
 			
-			$resultado = $this->db->query("UPDATE competidor SET nombre='$nombre', apellido='$apellido', fecha_nacimiento='$edad', cedula='$cedula', departamento='$departamento', genero='$genero' WHERE id = '$id'");
+			$resultado = $this->db->query("UPDATE competidor SET nombre='$nombre', apellido='$apellido', fecha_nacimiento='$edad', ci='$cedula', departamento='$departamento', genero='$genero' WHERE idCompetidores = '$id'");
 		}
 		
 		public function eliminar($id){

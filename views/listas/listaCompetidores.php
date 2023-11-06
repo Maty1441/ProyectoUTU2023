@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="assets/css/listaParticipantes.css">
+    <link rel="stylesheet" href="assets/css/listas.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $data["titulo"]; ?></title>
 </head>
 <body>
-<div class="arriba">
-<h1><span>O.</span><span class="colorLetraK">K</span><span>.C.</span></h1>
-<h2>Official <span class="colorLetraK">Karate </span> Championship</h2>
+<div class="logo">
+<img src="assets/images/logo.svg" width="220px" height="220px" class="logo">
 <div class='busc'>
   <form method="GET" action="resultado_buscador.php" class="resutlado_buscador">
     <input type="text" name="consulta" placeholder="Buscador" class="buscador">

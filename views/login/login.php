@@ -7,8 +7,7 @@
     <title>Inicio de Sesion</title>
 </head>
 <body>
-    <h1><span>O.</span><span class="colorLetraK">K</span><span>.C.</span></h1>
-    <h2>Official <span class="colorLetraK">Karate</span> Championship</h2>
+    <img src="assets/images/logo.svg" width="300px" height="300px" class="logo">
     <h3>¿Eres un juez o administrador?<br>Ingrese la contraseña:</h3>
 
 <form action="../../php/login.php" target="_blank" method="post">
@@ -26,9 +25,9 @@
         <span class="transition"></span>
         <span class="gradient"></span>
         <span class="label">Volver</span>
-    </button></a>
+    </button></a><br><br>
 </nav>
-<nav class="volver">
+<<nav class="volver">
     <a href="index.php?c=listas&a=admin"><button class="btn1">
         <span class="transition"></span>
         <span class="gradient"></span>

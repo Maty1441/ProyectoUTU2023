@@ -55,25 +55,26 @@
 			$this->listaCompetidores();
 		}
 
-		public function actualizarCompetidor($id, $nombre, $apellido, $edad, $cedula, $departamento, $genero){
+		public function actualizarCompetidor(){
 
-			$ci = $_POST["cedula"];
-			$nombre = $_POST["nombre"];
-			$apellido = $_POST["apellido"];
-			$edad = $_POST["edad"];
-			$departamento = $_POST["departamento"];
-			$genero = $_POST["genero"];
+			$id = $_POST["id"];
+			$ci = $_POST["Cedula"];
+			$nombre = $_POST["Nombre"];
+			$apellido = $_POST["Apellido"];
+			$edad = $_POST["Edad"];
+			$departamento = $_POST["Departamento"];
+			$genero = $_POST["Genero"];
 
 			$Competidor = new competidores_Modelo();
 			$Competidor->modificar($id, $ci, $nombre, $apellido, $edad, $departamento, $genero);
 			$data["titulo"] = "Actualizar";
-			$this->index();
+			$this->listaCompetidores();
 		}
 
 		public function modificar($id){			
 			$Competidor = new competidores_Modelo();			
-			$data["idCompetidor"] = $id;
 			$data["Competidor"] = $Competidor->get_competidor_por_id($id);
+			$data["idCompetidor"] = $id;
 			$data["titulo"] = "Modificar Competidor";
 			require_once "views/listas/listaModificarCompetidor.php";
 		}

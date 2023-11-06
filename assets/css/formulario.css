@@ -19,71 +19,54 @@ body {
     src: url("../fonts/Aileron-Bold.otf");
 }
 
-h1 {
-    text-align: right;
-    color: white;
-    margin-top: 4vh;
-    margin-right: 39vh;
-    font-size: 15vh;
-    font-family: AdleryBlockletter;
+.logo{
+  width: 100%;
+  margin-right: 15%;
 }
 
-.colorLetraK {
-    color: #D42F32;
-}
-
-h2 {
-    text-align: right;
-    color: white;
-    margin-top: -10vh;
-    margin-right: 34.5vh;
-    font-size: 2.7vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 /* Ingreso de datos */
 
 form{
-    text-align: right;
-    justify-content: flex;
-    width: 50%;
-    margin-right: 12vh;
-    margin-left: auto;
-    margin-top: .2vh;
-    font-family: Aileron;
+  text-align: right;
+  justify-content: flex;
+  width: 50%;
+  height: 20%;
+  margin-right: 5%;
+  margin-left: auto;
+  font-family: Aileron;
 }
 
 label {
-    min-height: 5vh;
-    font-size: 3.7vh;
-    color: white;
-    text-align: right;
-    margin-right: 8vh;
-    margin-top: 1vh;
+  min-height: 5vh;
+  font-size: 3.7vh;
+  color: white;
+  text-align: right;
+  margin-right: 8vh;
 }
 
 /* text */
 
 input[type="text"] {
-    width: 12em;
-    border-radius: 10px;
-    padding: 0.5em 4em;
-    text-align: left;
-    min-height: 2em;
-    font-size: 2vh;
-    margin-top: 0.25em;
-    margin-right: 10vh;
-    color: white;
-    background-color: rgba(17, 17, 17, 0);
-    border: 3px solid rgb(220, 220, 220);
-    transition: border 0.3s;
+  width: 12em;
+  border-radius: 10px;
+  padding: 0.5em 4em;
+  text-align: left;
+  min-height: 2em;
+  font-size: 2vh;
+  margin-top: 0.25em;
+  margin-right: 10vh;
+  color: white;
+  background-color: rgba(17, 17, 17, 0);
+  border: 3px solid rgb(220, 220, 220);
+  transition: border 0.3s;
 }
 
 input[type="text"]:hover{
-    border: 3px solid #D42F32;
+  border: 3px solid rgba(218, 165, 32, 0.750);;
 }
 
 input[type="text"]:focus {
-  border: 3px solid #5E17EB;
+  border: 3px solid rgba(218, 165, 32, 0.750);;
   outline: none;
 }
 
@@ -105,41 +88,14 @@ input[type="date"]{
 }
 
 input[type="date"]:hover{
-  border: 3px solid #D42F32;
+  border: 3px solid rgba(218, 165, 32, 0.750);;
 }
 
 input[type="date"]:focus {
-  border: 3px solid #5E17EB;
+  border: 3px solid rgba(218, 165, 32, 0.750);;
   outline: none;
 }
 
-/* number */
-
-input[type="number"]{
-  width: 12em;
-  height: 2em;
-  border-radius: 10px;
-  padding: 0.5em 4em;
-  text-align: left;
-  min-height: 2em;
-  font-size: 2vh;
-  margin-top: 0.25em;
-  margin-right: 10vh;
-  color: white;
-  background-color: rgba(17, 17, 17, 0);
-  border: 3px solid rgb(220, 220, 220);
-  transition: border 0.3s;
-}
-
-input[type="number"]:hover{
-  border: 3px solid #D42F32;
-}
-
-input[type="number"]:focus {
-  border: 3px solid #5E17EB;
-  outline: none;
-}
- 
 /* select */
 
 select {
@@ -158,103 +114,100 @@ select {
 }
 
 select:hover{
-  border: 3px solid #D42F32;
+  border: 3px solid rgba(218, 165, 32, 0.750);;
   /*border: 3px solid #5E17EB;*/
 }
 
 select:focus {
-  border: 3px solid #5E17EB;
+  border: 3px solid rgba(218, 165, 32, 0.750);;
   outline: none;
 }
 
 /* placeholder */
 
 ::placeholder {
-    font-size: 1.2em;
-    color: white;
-    text-align: left;
+  font-size: 1.2em;
+  color: white;
+  text-align: left;
 }
-/* Ingreso de datos */
 
 /* Boton */
 button {
-    text-align: center;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: 2.2vh;
-    font-weight: 500;
-    width: 20vh;
-    background: #D42F32;
-    color: #FFFFFF;
-    border: none;
-    position: relative;
-    overflow: hidden;
-    border-radius: 0.6em;
-    padding: 1em 1em;
-    font-family:Aileron;
+  text-align: center;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1.1em;
+  font-weight: 500;
+  width: 10em;
+  height: 3.2em;
+  background: rgba(218, 165, 32, 0.750);    
+  color: #FFFFFF;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.6em;
+  font-family:Aileron;
 }
   
   .gradient {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 0.6em;
-    margin-top: -0.25em;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-  }
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 0.6em;
+  margin-top: -0.25em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+}
   
   .label {
-    position: relative;
-    top: -1px;
-  }
+  position: relative;
+  top: -1px;
+}
   
   .transition {
-    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    transition-duration: 500ms;
-    background-color: #5E17EB;
-    border-radius: 9999px;
-    width: 0;
-    height: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
+  background-color: #5E17EB;
+  border-radius: 20px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
   
   button:hover .transition {
-    width: 14em;
-    height: 14em;
-  }
+  width: 14em;
+  height: 14em;
+}
   
   button:active {
-    transform: scale(0.97);
-  }
+  transform: scale(0.97);
+}
   /*Boton*/
 
   div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  nav{
-    text-align: center;
-    width: 50%;
-    margin-top: -2vh;
-    margin-right: 12vh;
-    margin-left: auto;
-    text-decoration: none;
-  }
+
+  .boton-volver{
+  width: 50%;
+  margin-right: 5%;
+  margin-left: auto;
+}
 
   a{
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
 
   .volver a:link {
-    color: #FFFFFF;
-  }
+  color: #FFFFFF;
+}
   /* Para cambiar el boton de la letra cuando el enlace ya ha sido visitado */
   .volver a:visited {  
-    color: #FFFFFF;
-  }
+  color: #FFFFFF;
+}

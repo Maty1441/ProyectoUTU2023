@@ -7,10 +7,7 @@
     <title>Administrador</title>
 </head>
 <body>
-    <div class="titulo">
-        <h1><span>O.</span><span class="colorLetraK">K</span><span>.T.</span></h1>
-        <h2>Official <span class="colorLetraK">Karate </span>Tournament</h2>
-    </div>
+    <img src="assets/images/logo.svg" width="220px" height="220px" class="logo">
     <h3>INGRESE UNA OPCIÓN</h3>
 
     <div class="opciones">
@@ -24,7 +21,7 @@
             <a href="index.php?c=listas&a=listaClasificados">COMBATIENTES CLASIFICADOS</a>
         </button><br>
         <button class="btn">
-            <a href="#">EDITAR PUNTUACION DE JUECES</a>
+            <a href="index.php?c=Usuarios&a=juez">EDITAR PUNTUACION DE JUECES</a>
         </button>
     </div>
 </body>

@@ -23,29 +23,11 @@ body{
   src: url("../fonts/Aileron-Bold.otf");
 }
 
-h1{
-    display: flex;
-    justify-content: right;
-    margin-right: 1em;
-    margin-top: 0.2em;
-    font-size: 8em;
-    color: white;
-    font-family:AdleryBlockletter;
-}
-
-h2{
-    display: flex;
-    justify-content: right;
-    margin-right: 3em;
-    margin-top: 0.2em;
-    font-size: 1.6em;
-    color: white;
-    font-family:Aileron;
-}
-
-.colorLetraK{
-    color: red;
-    word-spacing: 2em;
+img{
+  display: flex;
+  margin-left: auto;
+  margin-top: 1em;
+  margin-right: 1em;
 }
 
 form{
@@ -62,10 +44,10 @@ div{
 }
 
 .busc {
-    margin: 0 2em 0 2em; /* margin: (top) (right) (bottom) (left) */
-    text-align: center;
     display: flex;
     justify-content: left;
+    margin: -.5em 0 0 5em; /* margin: (top) (right) (bottom) (left) */
+    text-align: center;
   }
 
 .search-form {
