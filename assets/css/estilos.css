@@ -6,7 +6,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image:url("../images/fondoPaginaPrincipal1.png");
+    background-image:url("../images/fondoPrincipal.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -29,70 +29,38 @@ body{
 
 .titulo{
   margin-left: auto;
-  margin-top: 4em;
-  width: 52%;
+  margin-right: 16.25em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  width: 25%;
   text-align: center;
-}
-
-h1 {
-  font-size: 15em;
-  font-family: AdleryBlockletter;
-}
-
-.colorLetraK {
-    color: #D42F32;
-}
-
-h2 {
-  font-size: 2em;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-h3{
-  margin-bottom: 0;
-  font-size: 2.2em;
-  font-family: AdleryBlockLetter;
 }
 
 h4 {
-  margin-bottom: 0;
-  margin-right: .1em;
+  text-align: right;
+  margin-top: 0.25em;
+  margin-right: .25em;
   font-family: AdleryBlockletter;
-  font-size: 2em;
-  color: black;
+  font-size: 3em;
+  color: white;
 }
 
-.botones{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20em;
-  width: 100%;
-  margin: auto;
-}
-
-.boton1{
-  height: 4.8em;
-  margin-left: auto;
-}
-
-.boton2{
+.botones {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  padding-right: 8%;
-  margin-top: 2em;
-}
-
-.btn2, .btn3{
-  margin: auto;
-}
-
-div.boton2{
+  align-items: center;
+  width: 25%;
   height: 100%;
-  width: 20%;
-  margin-left: 7%;
-  text-align: center;
+  margin: 2em 10em 0 auto; /* top right bottom left*/
+}
+
+.btn1, .btn2, .btn3 {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.botones img {
+  margin-bottom: 1.2em;
 }
 
 a.regist {
@@ -106,18 +74,17 @@ a.regist {
 
 button {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: 2.5vh;
-    font-weight: 500;
+    font-size: 1.2em;
     width: 15em;
-    height: 3.2em;
-    background: #D42F32;
+    height: 2.8em;
+    background: rgba(218, 165, 32, 0.750);
     color: #FFFFFF;
     border: none;
     position: relative;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 18px;
     text-align: center;
-    padding: 1em 1em;
+    padding: .5em .5em;
 }
   
   .gradient {
@@ -172,10 +139,4 @@ button {
   color: #FFFFFF;
 }
 
-footer {
-  position: relative;
-  text-align: right;
-  margin-top: 2em;
-  margin-bottom: 0;
-}
 /*boton activo:   #5E17EB   */

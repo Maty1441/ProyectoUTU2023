@@ -7,38 +7,31 @@
     <title>Pagina principal</title>
 </head>
 <body>
-    <div class="titulo">
-        <h1><span>O.</span><span class="colorLetraK">K</span><span>.C.</span></h1>
-        <h2>Official <span class="colorLetraK"> Karate </span> Championship</h2>
-    </div>
+<h4>CONTÁCTENOS</h4>
     <div class="botones">
-        <div class="boton1">
+    <img src="assets/images/logo.svg" width="500px" height="400px">
         <button class="btn1">
         <a href="index.php?c=Usuarios&a=verCampeonato">
                 <span class="transition"></span>
                 <span class="gradient"></span>
                 <span class="label">VER CAMPEONATO</span>
-            </a></button></div>
+            </a></button>
 
-        <div class="boton2">
         <button class="btn2">
         <a href="index.php?c=Usuarios&a=login">
                 <span class="transition"></span>
                 <span class="gradient"></span>
-                <span class="label">Iniciar como personal</span>
+                <span class="label">INICIAR COMO PERSONAL</span>
             </a></button>
 
         <button class="btn3">   
         <a href="index.php?c=Usuarios&a=formulario">
                 <span class="transition"></span>
                 <span class="gradient"></span>
-                <span class="label">Registrar competidor</span>
+                <span class="label">REGISTRAR COMPETIDOR</span>
             </a></button>
-            <h3>NO TIENES UNA CUENTA?</h3><a href="#" class="regist">REGISTRATE AQUÍ</a>
-        </div>
     </div>
 </body>
 <footer>
-    <h4>CONTÁCTENOS</h4>
 </footer>
 </html>
