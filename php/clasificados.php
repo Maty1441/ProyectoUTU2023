@@ -13,7 +13,7 @@
         <h2 class="txt2">COMPETIDOR</h2>
         <h2 class="txt3">PUNTAJE DE LOS JUECES</h2>
     </div>
-    <?php
+<?php
 $conexion = new mysqli("127.0.0.1", "root", "", "torneo_bd", 33065); //cambiar el puerto 33065 a 3306
 
 if ($conexion->connect_error) {
