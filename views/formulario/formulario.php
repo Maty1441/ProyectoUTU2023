@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="assets/css/formulario.css">
+    <script src="assets/js/form.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
 <body>
-        <form action="index.php?c=Usuarios&a=enviarFormulario" target="_blank" method="post">
+        <form action="index.php?c=Usuarios&a=enviarFormulario" target="_blank" method="post" id="formulario" onsubmit="return validarFormulario(this)">
         <div class="logo">
             <img src="assets/images/logo.svg" width="300px" height="300px">
         </div>
@@ -18,11 +19,10 @@
             <input type="text" id="apellido" name="Apellido" value="" placeholder="Apellido" maxlength="50"><br><br>
 
             <label for="fNac">Fecha de nacimiento:</label>
-            <input type="date" id="edad" name="Edad" placeholder="DD/MM/AAAA" min="1900-01-01" max="2011-11-13"><br><br>
+            <input type="date" id="edad" name="Edad" placeholder="DD/MM/AAAA"><br><br>
     
             <label for="cedula">Cedula:</label>
             <input type="text" id="ci" name="Cedula" value="" placeholder="C.I" oninput="validarNumero(this)"><br><br>
-            <script src="../../assets/js/form.js"></script>
     
             <label for="departamento">Departamento:</label>
             <select id="departamento" name="Departamento">
@@ -59,7 +59,7 @@
                 <span class="transition"></span>
                 <span class="gradient"></span>
                 <span class="label">Ingresar</span>
-            </button></div><br><br>
+            </button></div><br>
         </form>
         <nav class="volver">
             <div class="boton-volver">
