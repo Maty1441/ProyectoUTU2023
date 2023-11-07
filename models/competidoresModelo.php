@@ -70,9 +70,9 @@
 	
 		}
 		
-		public function modificar($id, $nombre, $apellido, $edad, $cedula, $departamento, $genero){
+		public function modificar($id, $ci, $nombre, $apellido, $edad, $departamento, $genero){
 			
-			$resultado = $this->db->query("UPDATE competidor SET nombre='$nombre', apellido='$apellido', fecha_nacimiento='$edad', ci='$cedula', departamento='$departamento', genero='$genero' WHERE idCompetidores = '$id'");
+			$resultado = $this->db->query("UPDATE competidor SET ci='$ci', nombre='$nombre', apellido='$apellido', fecha_nacimiento='$edad', departamento='$departamento', genero='$genero' WHERE idCompetidores = '$id'");
 		}
 		
 		public function eliminar($id){

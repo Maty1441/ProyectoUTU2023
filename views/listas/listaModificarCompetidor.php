@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="assets/css/formulario.css">
+    <script src="assets/js/form.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $data["titulo"]; ?></title>
 </head>
 <body>
-        <form action="index.php?c=listas&a=actualizarCompetidor" target="_blank" method="POST" name="modCompetidor">
+        <form action="index.php?c=listas&a=actualizarCompetidor" target="_blank" method="POST" name="modCompetidor" id="formulario" onsubmit="return validarFormulario(this)">
         <input type="hidden" name="id" value="<?php echo $data ["Competidor"]["idCompetidores"]?>">
         <div class="logo">
             <img src="assets/images/logo.svg" width="220px" height="220px">
@@ -23,7 +24,6 @@
     
             <label for="cedula">Cedula:</label>
             <input type="text" id="ci" name="Cedula" value="<?php echo $data["Competidor"]["ci"]?>" placeholder="C.I" oninput="validarNumero(this)"><br><br>
-            <script src="assets/js/form.js"></script>
     
             <label for="departamento">Departamento:</label>
             <select id="departamento" name="Departamento" value="<?php echo $data["Competidor"]["departamento"]?>">

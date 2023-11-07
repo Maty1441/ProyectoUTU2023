@@ -12,7 +12,7 @@
 			$data["titulo"] = "Competidor";
 			$data["Competidor"] = $Competidor->get_competidores();
 			
-			require_once "views/admin/admin.html";
+			require_once "views/admin/admin.php";
 		}
 
 		public function admin(){
@@ -86,6 +86,7 @@
 			$data["Competidor"] = $Competidor->get_competidor_por_id($id);
 			$data["idCompetidor"] = $id;
 			$data["titulo"] = "Modificar Competidor";
+			
 			require_once "views/listas/listaModificarCompetidor.php";
 		}
 

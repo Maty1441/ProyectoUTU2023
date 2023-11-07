@@ -98,7 +98,7 @@ class UsuariosController
     public function cerrarSesion(){
 
         session_destroy();
-        require "login/login.html";
+        require "login/login.php";
     }
 }
 ?>
