@@ -16,35 +16,35 @@
   </form>
 </div>
 </div>
-      <table border="1" width="80%" class="table">
-	      <thead>
-	      	<tr>
-            <th>Nombre</th>
-			      <th>Apellido</th>
-			      <th>Fecha de Nacimiento</th>
-			      <th>Cedula</th>
-			      <th>Departamento</th>
-			      <th>Genero</th>
-			      <th>Agregar</th>
-			      <th>Modificar</th>
-	      	</tr>
-	      </thead>
-                  
-            <tbody>
-            <?php foreach($data["Competidor"] as $dato) {
-                      echo "<tr>";
-                      echo "<td>".$dato["nombre"] . "</td>";
-                      echo "<td>".$dato["apellido"] . "</td>";
-                      echo "<td>".$dato["fecha_nacimiento"] . "</td>";
-                      echo "<td>".$dato["ci"] . "</td>";
-                      echo "<td>".$dato["departamento"] . "</td>";
-                      echo "<td>".$dato["genero"] . "</td>";
-                      echo "<td><a href='index.php?c=listas&a=modificar&id=" . $dato["idCompetidores"] . "'>Modificar</a></td>";
-                      echo "<td><a href='index.php?c=listas&a=eliminarClasificados&id=" . $dato["idCompetidores"] . "'>Eliminar</a></td>";
-                      echo "</tr>";
-                  }
-            ?>
-            </tbody>
-      </table>
+  <table border="1" width="80%" class="table">
+	  <thead>
+	  	<tr>
+        <th>Nombre</th>
+	      <th>Apellido</th>
+	      <th>Fecha de Nacimiento</th>
+	      <th>Cedula</th>
+	      <th>Departamento</th>
+	      <th>Genero</th>
+	      <th>Modificar</th>
+	      <th>Eliminar</th>
+	  	</tr>
+	  </thead>
+              
+    <tbody>
+    <?php foreach($data["Competidor"] as $dato) {
+          echo "<tr>";
+          echo "<td>".$dato["nombre"] . "</td>";
+          echo "<td>".$dato["apellido"] . "</td>";
+          echo "<td>".$dato["fecha_nacimiento"] . "</td>";
+          echo "<td>".$dato["ci"] . "</td>";
+          echo "<td>".$dato["departamento"] . "</td>";
+          echo "<td>".$dato["genero"] . "</td>";
+          echo "<td><a href='index.php?c=listas&a=modificar&id=" . $dato["idCompetidores"] . "'>Modificar</a></td>";
+          echo "<td><a href='index.php?c=listas&a=eliminarClasificados&id=" . $dato["idCompetidores"] . "'>Eliminar</a></td>";
+          echo "</tr>";
+      }
+    ?>
+    </tbody>
+  </table>
 </body>
 </html>

@@ -78,7 +78,7 @@
 			$Competidor = new competidores_Modelo();
 			$Competidor->modificar($id, $ci, $nombre, $apellido, $edad, $departamento, $genero);
 			$data["titulo"] = "Actualizar";
-			$this->listaCompetidores();
+			$this->admin();
 		}
 
 		public function modificar($id){			
