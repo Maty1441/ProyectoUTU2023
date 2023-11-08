@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="assets/css/juez.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eliga Competidor</title>
+    <title>Elija Competidor</title>
 </head>
 <header>
     <div class="contenedor-flex">

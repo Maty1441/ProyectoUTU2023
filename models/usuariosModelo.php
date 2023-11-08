@@ -55,7 +55,7 @@ class usuarios_Modelo
     // ----------------- Para enviar y verificar ci del Formulario ----------------- // 
 
     public function get_validar($clave) {
-        $sql = "SELECT nombre FROM usuario WHERE contraseña = ?";
+        $sql = "SELECT nombre FROM usuario WHERE clave = ?";
         $stmt = $this->db->prepare($sql);
     
         if ($stmt) {

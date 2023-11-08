@@ -59,6 +59,11 @@ class UsuariosController
         require "views/juez/puntuar.php";
     }
 
+    public function genero(){
+
+        require "views/campeonato/elegirGenero.html";
+    }
+
     public function enviarFormulario(){
 
         $ci = $_POST["Cedula"]; //Aca van los campos "name" del formulario

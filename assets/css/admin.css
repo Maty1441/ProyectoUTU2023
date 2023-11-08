@@ -25,33 +25,27 @@ body{
 
 .arriba {
     display: flex;
-    border: 2px solid white;
-}
-
-.texto{
-    margin: 0 auto;
-    border: 2px solid yellow;
 }
 
 .logo {
+    display: flex;
     margin-left: auto;
-    width: 13.75em;
-    height: 13.75em;
-    border: 2px solid blue;
+    margin-right: 1em;
+    margin-top: 1em;
+    width: 10em;
+    height: 10em;
 }
 
-h3 {
+h3 {    
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
     color: white;
     font-family: AdleryBlockletter;
-    border: 2px solid red;
 }
 
 .opciones{
     font-size: 10vh;
     text-align: center;
-    border: 2px solid green;
 }
 
 a{

@@ -8,11 +8,9 @@
 </head>
 <body>
 <div class="arriba">
-    <div class="texto">
-        <h3>INGRESE UNA OPCIÓN</h3>
-    </div>
     <img src="assets/images/logo.svg" class="logo">
 </div>
+<h3>INGRESE UNA OPCIÓN</h3>
     <div class="opciones">
         <button class="btn">
             <a href="index.php?c=listas&a=listaCompetidores">MOSTRAR LISTA COMPETIDORES</a>

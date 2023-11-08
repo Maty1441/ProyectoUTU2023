@@ -18,7 +18,7 @@
             <h3 class="txt2">Hangetsu</h3>
         </div>
 
-        <form>
+        <form action="index.php?c=Usuarios&a=juez" target="_blank" method="post">
             <input type="text" id="inputField" value="5.0" min="5.0" max="10.0">
             <button type="button" id="sumar"><i class="fas fa-arrow-up"></i></button>
             <button type="button" id="restar"><i class="fas fa-arrow-down"></i></button>
