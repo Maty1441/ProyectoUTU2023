@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesion</title>
 </head>
+<header>
+    <img src="assets/images/logo.svg" class="logo">
+</header>
 <body>
-    <img src="assets/images/logo.svg" width="300px" height="300px" class="logo">
-    <h3>¿Eres un juez o administrador?<br>Ingrese la contraseña:</h3>
+<h3>¿Eres un juez o administrador?<br>Ingrese la contraseña:</h3>
 
-<form action="../../php/login.php" target="_blank" method="post">
+<form action="index.php?c=Usuarios&a=validar" target="_blank" method="POST">
 <div><label for="passwd"></label>
-    <input type="text" id="passwd" name="contraseña" value="" placeholder="Contraseña" maxlength="50"><br><br>
+    <input type="password" id="clave" name="clave" value="" placeholder="Contraseña" maxlength="50"><br><br>
 </div>
         <button type="submit" class="boton-ingresar">
             <span class="transition"></span>
@@ -26,13 +28,6 @@
         <span class="gradient"></span>
         <span class="label">Volver</span>
     </button></a><br><br>
-</nav>
-<<nav class="volver">
-    <a href="index.php?c=listas&a=admin"><button class="btn1">
-        <span class="transition"></span>
-        <span class="gradient"></span>
-        <span class="label">Pasar</span>
-    </button></a>
 </nav>
 </body>
 </html>

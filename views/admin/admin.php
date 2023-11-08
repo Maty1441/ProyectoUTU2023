@@ -7,9 +7,12 @@
     <title>Administrador</title>
 </head>
 <body>
-    <img src="assets/images/logo.svg" width="220px" height="220px" class="logo">
-    <h3>INGRESE UNA OPCIÓN</h3>
-
+<div class="arriba">
+    <div class="texto">
+        <h3>INGRESE UNA OPCIÓN</h3>
+    </div>
+    <img src="assets/images/logo.svg" class="logo">
+</div>
     <div class="opciones">
         <button class="btn">
             <a href="index.php?c=listas&a=listaCompetidores">MOSTRAR LISTA COMPETIDORES</a>

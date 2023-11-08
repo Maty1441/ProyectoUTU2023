@@ -28,11 +28,6 @@ class UsuariosController
         require "views/formulario/formulario.php";
     }
 
-    public function admin(){
-
-        require "views/admin/admin.php";
-    }
-
     public function listaCompetidores(){
 
         $Competidor = new competidores_Modelo();
@@ -47,6 +42,11 @@ class UsuariosController
         $data["titulo"] = "Lista de Eliminados";
 
         require "views/listas/listaEliminados.php";
+    }
+
+    public function admin(){
+        
+        require "views/admin/admin.php";
     }
 
     public function juez(){
@@ -73,27 +73,21 @@ class UsuariosController
 		$this->formulario();
     }
 
-    public function validar(){
-
-    $usuario = new usuarios_Modelo();
-    $usuarioN = $_POST['usuarioN'];
-    $clave = $_POST['clave'];
-    $data["usuario"] = $usuario-> get_validar($usuarioN, $clave);
-
-    if($data["usuario"]) {
-        
-        echo "USUARIO VALIDO (controlador)" . var_dump($data);
-        $_SESSION['nombre'] = $data['usuario'][0]['nombre'];
-        $_SESSION['username'] = $data ['usuario'][0]['usuarioN'];
-        $_SESSION['rol'] = $data ['usuario'][0]['idRoles'];
-
-        
-        require "vista/usuarios/home.html";
-    } else {
-        echo "Usuario no valido.. " . var_dump($data);
+    public function validar() {
+        $usuario = new usuarios_modelo();
+        $clave = $_POST['clave']; // Obtén la contraseña del formulario
+    
+        // Llama a la función get_validar con la contraseña
+        $resultadoValidacion = $usuario->get_validar($clave);
+    
+        if ($resultadoValidacion === "admin") {
+            return $this->admin();
+        } elseif ($resultadoValidacion === "juez") {
+            return $this->juez();
+        } else {
+            echo "Usuario No valido ..";
+        }
     }
-
-}
 
     public function cerrarSesion(){
 
