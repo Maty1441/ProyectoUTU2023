@@ -32,7 +32,7 @@ if ($data["Competidor"]) {
 
     echo "</table>";
 } else {
-    echo "No se encontraron puntajes.";
+    echo "<h2>No hay puntajes registrados.</h2>";
 }
 ?>
 </tbody>
