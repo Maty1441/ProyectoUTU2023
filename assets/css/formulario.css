@@ -37,8 +37,8 @@ form{
 }
 
 label {
-  min-height: 5vh;
-  font-size: 3.7vh;
+  font-size: 2.25em;
+  overflow: visible;
   color: white;
   text-align: right;
   margin-right: 8vh;
@@ -62,11 +62,11 @@ input[type="text"] {
 }
 
 input[type="text"]:hover{
-  border: 3px solid rgba(218, 165, 32, 0.750);;
+  border: 3px solid rgba(218, 165, 32, 0.750);
 }
 
 input[type="text"]:focus {
-  border: 3px solid rgba(218, 165, 32, 0.750);;
+  border: 3px solid rgba(218, 165, 32, 0.750);
   outline: none;
 }
 

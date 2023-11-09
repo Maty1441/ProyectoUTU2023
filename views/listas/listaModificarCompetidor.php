@@ -19,7 +19,7 @@
             <label for="apellido">Apellido:</label>
             <input type="text" id="apellido" name="Apellido" value="<?php echo $data["Competidor"]["apellido"]?>" placeholder="Apellido"><br><br>
 
-            <label for="fNac">Fecha de nacimiento:</label>
+            <label for="fNac">Edad:</label>
             <input type="date" id="edad" name="Edad" value="<?php echo $data["Competidor"]["fecha_nacimiento"]?>"><br><br>
     
             <label for="cedula">Cedula:</label>

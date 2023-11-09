@@ -7,10 +7,12 @@
     <title><?php echo $data["titulo"];?></title>
 </head>
 <body>
-<h1>CLASIFICADOS</h1>
+<h1>TABLA DE PUNTUACIONES</h1>
+<h2>Ronda 1</h2>
 <table class='primeraFila'>
     <tr>
         <th>POSICIÓN</th>
+        <th>EQUIPO</th>
         <th>COMPETIDOR</th>
         <th>PUNTAJE DE LOS JUECES</th>
     </tr>
@@ -24,6 +26,7 @@ if ($data["Competidor"]) {
     foreach ($data["Competidor"] as $competidor) {
         echo "<tr>
                 <td>" . $contador . "</td>
+                <td class='equipo'> AKA </td>    
                 <td class='nombre'>" . $competidor["nombre"] . "</td>
                 <td>" . $competidor["puntajeRonda"] . "</td>
               </tr>";
@@ -32,7 +35,7 @@ if ($data["Competidor"]) {
 
     echo "</table>";
 } else {
-    echo "<h2>No hay puntajes registrados.</h2>";
+    echo "<h3>No hay puntajes registrados.</h3>";
 }
 ?>
 </tbody>

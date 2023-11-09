@@ -18,7 +18,7 @@
             <label for="apellido">Apellido:</label>
             <input type="text" id="apellido" name="Apellido" value="" placeholder="Apellido" maxlength="50"><br><br>
 
-            <label for="fNac">Fecha de nacimiento:</label>
+            <label for="fNac">Edad:</label>
             <input type="date" id="edad" name="Edad" placeholder="DD/MM/AAAA"><br><br>
     
             <label for="cedula">Cedula:</label>
@@ -51,7 +51,6 @@
             <select id="genero" name="Genero">
                 <option value="Femenino">Femenino</option>
                 <option value="Masculino">Masculino</option>
-                <option value="Otro">Otro</option>
             </select><br><br>
 
             <div class="boton-ingresar">
