@@ -20,7 +20,7 @@
             <input type="text" id="apellido" name="Apellido" value="<?php echo $data["Competidor"]["apellido"]?>" placeholder="Apellido"><br><br>
 
             <label for="fNac">Edad:</label>
-            <input type="date" id="edad" name="Edad" value="<?php echo $data["Competidor"]["fecha_nacimiento"]?>"><br><br>
+            <input type="date" id="edad" name="Edad" value="<?php echo $data["Competidor"]["fechaNac"]?>"><br><br>
     
             <label for="cedula">Cedula:</label>
             <input type="text" id="ci" name="Cedula" value="<?php echo $data["Competidor"]["ci"]?>" placeholder="C.I" oninput="validarNumero(this)"><br><br>

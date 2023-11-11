@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .25), rgba(0,0,0, .25)), url("../images/fondoFormulario.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+@font-face{
+    font-family:AdleryBlockletter;
+    src: url("../fonts/AdleryBlockletter.ttf");
+}
+
+@font-face{
+    font-family:Aileron;
+    src: url("../fonts/Aileron-Bold.otf");
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0%;
+    margin: auto;
+}
+
+img{
+    margin-left: auto;
+    margin-right: 1em;
+    margin-top: 1em;
+    width: 12em;
+    height: 12em;
+}
+
+.titulo{
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    overflow: visible;
+    margin-top: -1em;
+    font-size: 4em;
+    font-family:AdleryBlockletter;
+}
+
+form {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    margin-bottom: .2em;
+    color: white;
+    font-family: Aileron;
+}
+
+input{
+    color: whitesmoke;
+    text-align: center;
+    height: 2em;
+    width: 16em;
+    border-radius: 10px;
+    background-color: rgba(17, 17, 17, 0.9);
+    border: 3px solid rgb(220, 220, 220);
+    font-family: Aileron;
+    transition: border 0.3s;
+}
+
+select{
+    color: whitesmoke;
+    text-align: center;
+    height: 2.2em;
+    width: 16.3em;
+    border-radius: 10px;
+    background-color: rgba(17, 17, 17, 0.9);
+    border: 3px solid rgb(220, 220, 220);
+    font-family: Aileron;
+    transition: border 0.3s;
+}
+
+input:hover {
+    border: 3px solid rgba(218, 165, 32, 0.750);
+}
+
+select:hover{
+    border: 3px solid rgba(218, 165, 32, 0.750);
+}
+
+::placeholder {
+    font-family: Aileron;
+    color: whitesmoke;
+}
+
+.boton-ingresar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.boton-volver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0%;
+    margin: 1em auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.volver a:link {
+    color: #FFFFFF;
+}
+
+.volver a:visited {
+    color: #FFFFFF;
+}
+
+/* Boton */
+button {
+    text-align: center;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: .8em;
+    font-weight: 500;
+    width: 10em;
+    height: 3.2em;
+    background: rgba(218, 165, 32, 0.750);    
+    color: #FFFFFF;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    font-family:Aileron;
+  }
+    
+    .gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0.6em;
+    margin-top: -0.25em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  }
+    
+    .label {
+    position: relative;
+    top: -1px;
+  }
+    
+    .transition {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 500ms;
+    background-color: #5E17EB;
+    border-radius: 20px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+    
+    button:hover .transition {
+    width: 14em;
+    height: 14em;
+  }
+    
+    button:active {
+    transform: scale(0.97);
+  }
+    /*Boton*/

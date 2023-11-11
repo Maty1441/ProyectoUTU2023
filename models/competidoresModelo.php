@@ -66,13 +66,13 @@
 
 		public function insertar($nombre, $apellido, $fNac, $cedula, $departamento, $genero){
 			
-			$resultado = $this->db->query("INSERT INTO competidor (nombre, apellido, fecha_nacimiento, cedula, departamento, genero) VALUES ('$nombre', '$apellido', '$fNac', '$cedula', '$departamento', '$genero')");
+			$resultado = $this->db->query("INSERT INTO competidor (nombre, apellido, fecha_Nac, cedula, departamento, genero) VALUES ('$nombre', '$apellido', '$fNac', '$cedula', '$departamento', '$genero')");
 	
 		}
 		
 		public function modificar($id, $ci, $nombre, $apellido, $edad, $departamento, $genero){
 			
-			$resultado = $this->db->query("UPDATE competidor SET ci='$ci', nombre='$nombre', apellido='$apellido', fecha_nacimiento='$edad', departamento='$departamento', genero='$genero' WHERE idCompetidores = '$id'");
+			$resultado = $this->db->query("UPDATE competidor SET ci='$ci', nombre='$nombre', apellido='$apellido', fecha_Nac='$edad', departamento='$departamento', genero='$genero' WHERE idCompetidores = '$id'");
 		}
 		
 		public function eliminar($id){

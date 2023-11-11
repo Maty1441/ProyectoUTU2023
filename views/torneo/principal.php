@@ -13,19 +13,16 @@
 <h3>INGRESE UNA OPCIÓN</h3>
     <div class="opciones">
         <button class="btn">
-            <a href="index.php?c=torneo&a=index">GESTIONAR TORNEOS</a>
+            <a href="index.php?c=torneo&a=verNuevoTorneo">INICIAR NUEVO TORNEO</a>
         </button><br>
         <button class="btn">
-            <a href="index.php?c=listas&a=listaCompetidores">MOSTRAR LISTA COMPETIDORES</a>
+            <a href="index.php?c=torneo&a=verTorneosEnCurso">VER TORNEOS EN CURSO</a>
         </button><br>
         <button class="btn">
-            <a href="index.php?c=listas&a=listaClasificados">COMBATIENTES CLASIFICADOS</a>
+            <a href="index.php?c=torneo&a=verTorneosFinalizados">VER TORNEOS FINLAIZADOS</a>
         </button><br>
         <button class="btn">
-            <a href="index.php?c=Usuarios&a=juez">EDITAR PUNTUACION DE JUECES</a>
-        </button><br>
-        <button class="btn">
-            <a href="index.php?c=listas&a=listaPuntajes">TABLA DE PUNTUACIONES</a>
+            <a href="index.php?c=torneo&a=verFinalizarTorneo">FINALIZAR UN TORNEO</a>
         </button>
     </div>
 </body>

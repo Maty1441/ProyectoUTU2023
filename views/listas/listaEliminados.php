@@ -36,7 +36,7 @@
                       echo "<tr>";
                       echo "<td>".$dato["Nombre"] . "</td>";
                       echo "<td>".$dato["Apellido"] . "</td>";
-                      echo "<td>".$dato["fecha_nacimiento"] . "</td>";
+                      echo "<td>".$dato["fechaNac"] . "</td>";
                       echo "<td>".$dato["ci"] . "</td>";
                       echo "<td>".$dato["departemento"] . "</td>";
                       echo "<td>".$dato["genero"] . "</td>";
