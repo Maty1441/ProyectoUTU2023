@@ -59,6 +59,8 @@ form {
 label {
     display: flex;
     margin-bottom: .2em;
+    font-size: 1.5em;
+    white-space: nowrap;
     color: white;
     font-family: Aileron;
 }
@@ -66,8 +68,8 @@ label {
 input{
     color: whitesmoke;
     text-align: center;
-    height: 2em;
-    width: 16em;
+    height: 2.5em;
+    width: 18em;
     border-radius: 10px;
     background-color: rgba(17, 17, 17, 0.9);
     border: 3px solid rgb(220, 220, 220);
@@ -78,8 +80,8 @@ input{
 select{
     color: whitesmoke;
     text-align: center;
-    height: 2.2em;
-    width: 16.3em;
+    height: 2.5em;
+    width: 18.3em;
     border-radius: 10px;
     background-color: rgba(17, 17, 17, 0.9);
     border: 3px solid rgb(220, 220, 220);
@@ -131,10 +133,9 @@ a {
 button {
     text-align: center;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: .8em;
-    font-weight: 500;
+    font-size: 1.25em;
     width: 10em;
-    height: 3.2em;
+    height: 2.5em;
     background: rgba(218, 165, 32, 0.750);    
     color: #FFFFFF;
     border: none;

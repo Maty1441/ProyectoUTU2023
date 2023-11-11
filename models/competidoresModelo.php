@@ -3,7 +3,7 @@
 	class competidores_Modelo {
 		
 		private $db;
-		private $competidores;
+		public $competidores;
 		
 		public function __construct(){
 			$this->db = Conectar::conexion();
