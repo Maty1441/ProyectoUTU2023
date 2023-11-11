@@ -54,7 +54,7 @@ class usuarios_Modelo
 
     // ----------------- Para enviar y verificar ci del Formulario ----------------- // 
 
-    public function get_validar($clave) {
+    public function get_validar($clave){
         $sql = "SELECT nombre FROM usuario WHERE clave = ?";
         $stmt = $this->db->prepare($sql);
     
@@ -76,17 +76,6 @@ class usuarios_Modelo
         }
         return false;
     }
-    
-    
-    public function get_competidores()
-		{
-			$sql = "SELECT * FROM competidor";
-			$resultado = $this->db->query($sql);
-			while($row = $resultado->fetch_assoc())
-			{
-				$this->competidores[] = $row;
-			}
-			return $this->competidores();
-	}
+
 }
 ?>

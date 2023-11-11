@@ -10,7 +10,7 @@
 <div class="logo">
 <img src="assets/images/logo.svg" width="220px" height="220px" class="logo">
 <div class='busc'>
-  <form method="GET" action="resultado_buscador.php" class="resutlado_buscador">
+  <form action="index.php?c=listas&a=buscar" target="_blank" method="post" class="resutlado_buscador">
     <input type="text" name="consulta" placeholder="Buscador" class="buscador">
     <button type="submit" class="lupa">&#8981;</button>
   </form>

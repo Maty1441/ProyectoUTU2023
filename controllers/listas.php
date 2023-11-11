@@ -23,6 +23,17 @@
 			require "views/admin/admin.php";
 		}
 
+		public function buscar(){
+
+			$nombre = $_POST["consulta"];
+
+			$competidores = new competidores_Modelo();
+			$data["titulo"] = "Lista de Competidores";
+			$data["Competidor"] = $competidores->buscar($nombre);
+	
+			require "views/listas/listaCompetidores.php";
+		}
+
 		// --------- ↓ Funciones para cargar TABLAS ↓ --------- //
 
 		public function listaCompetidores(){

@@ -86,6 +86,16 @@
 			$resultado = $this->db->query("DELETE FROM clasificados WHERE idCompetidores = '$id'");
 			
 		}
+
+		public function buscar($nombre){
+
+			$resultado = $this->db->query("SELECT * FROM competidor WHERE LOWER(nombre) LIKE LOWER('%$nombre%')");
+			while($row = $resultado->fetch_assoc())
+			{
+				$this->competidores[] = $row;
+			}
+			return $this->competidores;
+		}
 	
 	} 
 ?>
