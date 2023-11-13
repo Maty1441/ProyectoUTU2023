@@ -63,7 +63,7 @@
         </form>
         <nav class="volver">
             <div class="boton-volver">
-            <a href="index.php?c=Usuarios&a=index"><button class="btn1">
+            <a href="index.php?c=listas&a=index"><button class="btn1">
                 <span class="transition"></span>
                 <span class="gradient"></span>
                 <span class="label">Volver</span>

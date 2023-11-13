@@ -43,9 +43,9 @@ class torneo_Modelo {
 			return $this->Torneo;
 		}
 
-        public function enviarTorneo($inicio, $fin, $lugar){
+        public function enviarTorneo($nombre,$inicio, $fin, $lugar){
 
-            $resultado = $this->db->query("INSERT INTO torneo (fecha_inicio, fecha_final, lugar) VALUES ('$inicio', '$fin', '$lugar')");
+            $resultado = $this->db->query("INSERT INTO torneo (nombre, fecha_inicio, fecha_final, lugar) VALUES ('$nombre','$inicio', '$fin', '$lugar')");
         }
 
         public function eliminarTorneo($id){
@@ -57,5 +57,15 @@ class torneo_Modelo {
             
             $resultado = $this->db->query("UPDATE `torneo` SET `estado` = 'Finalizado' WHERE `torneo`.`idCompetencia` = $id;");
         }
+
+		public function buscar($nombre){
+
+			$resultado = $this->db->query("SELECT * FROM torneo WHERE LOWER(nombre) LIKE LOWER('%$nombre%')");
+			while($row = $resultado->fetch_assoc())
+			{
+				$this->Torneo[] = $row;
+			}
+			return $this->Torneo;
+		}
 
 }

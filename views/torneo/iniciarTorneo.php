@@ -5,7 +5,7 @@
     <script src="assets/js/formTorneo.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title><?php echo $data["titulo"]; ?></title>
 </head>
 <body>
 <div class="titulo">
@@ -14,6 +14,10 @@
 <h1>Seleccione los detalles del torneo:</h1>
     <div class="formulario">
         <form action="index.php?c=torneo&a=enviarTorneo" target="_blank" method="post" id="formulario" onsubmit="return validarFechas(this)">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="Nombre" value="" placeholder="Nombre del Torneo" maxlength="50" oninput="validarNombre()"><br><br>
+        
             <label for="fIni">Fecha de Inicio:</label>
             <input type="date" id="fInicio" name="Inicio" placeholder=""><br><br>
 

@@ -7,7 +7,10 @@
     <title>Pagina principal</title>
 </head>
 <body>
+<header>
+<a href="http://cuk.org.uy/"><img src="http://cuk.org.uy/wp-content/uploads/2021/08/cropped-LOGO_cuk-1.png" width="250px" height="250px" class="imagenCUK"></a>
 <h4>CONTÁCTENOS</h4>
+</header>
     <div class="botones">
     <img src="assets/images/logo.svg" width="500px" height="400px">
         <button class="btn1">

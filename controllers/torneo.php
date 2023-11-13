@@ -11,19 +11,43 @@ class TorneoController
 
     public function index(){
 
+        $data["titulo"] = "Gestionar Torneos";
         require "views/torneo/principal.php";
+}
+
+    public function buscar(){
+
+        $nombre = $_POST["consulta"];
+
+        $Torneo = new torneo_Modelo();
+        $data["titulo"] = "Lista de Torneos";
+        $data["Torneo"] = $Torneo->buscar($nombre);
+
+        require "views/torneo/torneosEnCurso.php";
+}
+
+    public function buscarFinalizar(){
+
+        $nombre = $_POST["consulta"];
+
+        $Torneo = new torneo_Modelo();
+        $data["titulo"] = "Lista de Torneos";
+        $data["Torneo"] = $Torneo->buscar($nombre);
+
+        require "views/torneo/finalizarTorneo.php";
 }
 
     // Botones de la pagina principal // 
     public function verNuevoTorneo(){
 
+        $data["titulo"] = "Iniciar Torneo";
         require "views/torneo/iniciarTorneo.php";
 }
 
     public function verTorneosEnCurso(){
 
         $Torneo = new torneo_Modelo();
-        $data["titulo"] = "Torneos en curso";
+        $data["titulo"] = "Torneos en Curso";
         $data["Torneo"] = $Torneo->get_torneos_en_curso();
 
         require "views/torneo/torneosEnCurso.php";
@@ -41,7 +65,7 @@ class TorneoController
     public function verFinalizarTorneo(){
 
         $Torneo = new torneo_Modelo();
-		$data["titulo"] = "Finlaziar Torneo";
+		$data["titulo"] = "Finalizar Torneo";
 		$data["Torneo"] = $Torneo->get_torneos();
 		
 		require "views/torneo/finalizarTorneo.php";
@@ -59,12 +83,13 @@ class TorneoController
     public function enviarTorneo(){
     
         //Aca van los campos "name" del formulario
+        $nombre = $_POST["Nombre"];
 	    $inicio = $_POST["Inicio"];
 	    $fin = $_POST["Fin"];
 	    $lugar = $_POST["Lugar"];
 
 	    $Torneo = new torneo_Modelo();
-	    $Torneo->enviarTorneo($inicio, $fin, $lugar);
+	    $Torneo->enviarTorneo($nombre, $inicio, $fin, $lugar);
 
 	    $this->verNuevoTorneo();
 }

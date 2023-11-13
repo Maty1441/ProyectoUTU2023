@@ -27,6 +27,16 @@ body{
   src: url("../fonts/Montserrat.ttf");
 }
 
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagenCUK{
+  margin-left: .5em;
+  margin-top: .5em;
+}
+
 .titulo{
   margin-left: auto;
   margin-right: 16.25em;
@@ -37,7 +47,6 @@ body{
 }
 
 h4 {
-  text-align: right;
   margin-top: 0.25em;
   margin-right: .25em;
   font-family: AdleryBlockletter;
@@ -51,7 +60,7 @@ h4 {
   align-items: center;
   width: 25%;
   height: 100%;
-  margin: 2em 10em 0 auto; /* top right bottom left*/
+  margin: -5em 10em 0 auto; /* top right bottom left*/
 }
 
 .btn1, .btn2, .btn3 {

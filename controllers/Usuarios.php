@@ -25,6 +25,7 @@ class UsuariosController
 
     public function formulario(){
 
+        $data["titulo"] = "Registro de Competidor";
         require "views/formulario/formulario.php";
     }
 
@@ -40,7 +41,6 @@ class UsuariosController
     public function listaEliminados(){
 
         $data["titulo"] = "Lista de Eliminados";
-
         require "views/listas/listaEliminados.php";
     }
 
