@@ -24,9 +24,9 @@
         <button class="btn">
             <a href="index.php?c=torneo&a=verFinalizarTorneo">FINALIZAR UN TORNEO</a>
         </button><br>
-        <button class="btn">
-            <a href="index.php?c=torneo&a=mostrarArray">FINALIZAR UN TORNEO</a>
-        </button>
+        <!-- <button class="btn">
+            <a href="index.php?c=torneo&a=mostrarArray">Mostrar Subarreglos</a>
+        </button> -->
     </div>
 </body>
 </html>
