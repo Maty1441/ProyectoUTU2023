@@ -6,6 +6,7 @@
 body{
     margin: 0;
     padding: 0;
+    height: 100vh;
     background-image:url("../images/fondoPrincipal.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,6 +31,10 @@ body{
 header{
   display: flex;
   justify-content: space-between;
+}
+
+section{
+  height: 100%;
 }
 
 .imagenCUK{
@@ -138,6 +143,11 @@ a{
   color: #FFFFFF;
 }
 
+section{
+  padding: 0;
+  margin: 0;
+}
+/*
 .formulario{
   display: flex;
   flex-direction: column;
@@ -178,6 +188,72 @@ input{
   overflow: hidden;
   border-radius: 18px;
   text-align: center 
-}
+}*/
 
 /*boton activo:   #5E17EB   */
+
+/* SECCION DE FORMULARIO */
+
+.section3{
+  background: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+form{
+  text-align: right;
+  margin: 5em auto;
+  width: 90%;
+  font-family: Montserrat;
+}
+
+div.textos{
+  text-align: left;
+  margin-left: 3em;
+  font-size: 1.6em;
+  font-family: Montserrat;
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px black; 
+}
+
+label{
+  margin-top: 5em;
+}
+
+input {
+  text-align: left;
+  border-radius: 6px;
+  padding: 1em 15em; /*abajo, derecha, arriba, izquierda*/
+  background-color: rgba(150, 150, 150, 0.8);
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  transition: border 0.25s;
+}
+
+input:hover{
+  border: 2px solid yellow;
+}
+
+::placeholder {
+  font-size: 1em;
+  color: white;
+  text-align: left;
+}
+
+.btn{
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  background-color: rgba(150, 119, 53, 0.8);
+  font-size: 1em;
+  margin-right: 14em;
+  transition: background-color 0.5s;
+}
+
+.btn:hover{
+  background-color: rgba(200, 150, 70, 0.9);
+}
+
+/* SECCION DE FORMULARIO */

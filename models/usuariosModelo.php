@@ -5,6 +5,7 @@ class usuarios_Modelo
 
     private $db;
     private $userValidado;
+    public $contacto;
 
     public function __construct()
     {
@@ -21,6 +22,12 @@ class usuarios_Modelo
     public function juez(){
 
         require "views/juez/juez.php";
+    }
+
+    public function enviarContacto($nombre, $email, $tel, $mensaje){
+
+        $resultado = $this->db->query = "INSERT INTO consultas (nombre, email, telefono, mensaje) VALUES ('$nombre', '$email', '$tel', '$mensaje');";
+
     }
 
     // ----------------- Para enviar y verificar ci del Formulario ----------------- // 

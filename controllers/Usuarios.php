@@ -12,6 +12,19 @@ class UsuariosController
 
         require_once "views/paginaPrincipal/paginaPrincipal.php";
     }
+
+    public function enviarContacto(){
+        
+        $nombre = $_POST["Nombre"];
+        $email = $_POST["Email"];
+        $tel = $_POST["Telefono"];
+        $mensaje = $_POST["Mensaje"];
+
+        $contacto = new usuarios_Modelo();
+        $data["Contacto"] = $contacto->enviarContacto($nombre, $email, $tel, $mensaje);
+
+        $this->index();
+}
     
     public function login(){
 
