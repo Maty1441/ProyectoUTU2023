@@ -52,7 +52,6 @@
             <select id="genero" name="Genero" value="<?php echo $data["Competidor"]["genero"]?>">
                 <option value="Femenino">Femenino</option>
                 <option value="Masculino">Masculino</option>
-                <option value="Otro">Otro</option>
             </select><br><br>
 
             <div class="boton-ingresar">

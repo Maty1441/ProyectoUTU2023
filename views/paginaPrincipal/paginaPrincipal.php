@@ -30,13 +30,6 @@
             <span class="gradient"></span>
             <span class="label">REGISTRAR COMPETIDOR</span>
         </a></button>
-
-        <button class="btn2">
-        <a href="index.php?c=torneo&a=crearGrupos">
-            <span class="transition"></span>
-            <span class="gradient"></span>
-            <span class="label">BOTON DE PRUEBA</span>
-        </a></button>
     </div>
 </body>
 <footer>

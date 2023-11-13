@@ -117,6 +117,7 @@
 		
 		public function actualizarClasificado($id){
 
+			$id = $_POST["idCompetidores"];
 			$ci = $_POST["Cedula"];
 			$nombre = $_POST["Nombre"];
 			$apellido = $_POST["Apellido"];

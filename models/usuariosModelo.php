@@ -42,7 +42,7 @@ class usuarios_Modelo
             return false;
         }
 
-        $sql = "INSERT INTO competidor (ci, nombre, apellido, fecha_Nac, departamento, genero) VALUES ('$ci', '$nombre', '$apellido', '$edad', '$departamento', '$genero');";
+        $sql = "INSERT INTO competidor (ci, nombre, apellido, fechaNac, departamento, genero) VALUES ('$ci', '$nombre', '$apellido', '$edad', '$departamento', '$genero');";
         $resultado = $this->db->query($sql);
     
         if ($resultado) {

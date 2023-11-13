@@ -94,11 +94,11 @@ body{
   }
 
   input{
-    border: 8px solid white;
+    border: 8px solid rgba(240, 240, 240, 0.9);
     border-radius: 30px;
     font-family: Aileron;
     font-size: 2em;
-    background: none;
+    background-color: rgba(0, 0, 0, 0.75);
     color: white;
     width: 2.5em;
     height: 1.8em;
