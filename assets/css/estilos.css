@@ -59,7 +59,6 @@ h4 {
   flex-direction: column;
   align-items: center;
   width: 25%;
-  height: 100%;
   margin: -5em 10em 0 auto; /* top right bottom left*/
 }
 
@@ -75,7 +74,6 @@ h4 {
 /* Botones */
 
 button {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 1.2em;
     width: 15em;
     height: 2.8em;
@@ -89,48 +87,47 @@ button {
     padding: .5em .5em;
 }
   
-  .gradient {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 20px;
-    margin-top: -0.25em;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-  }
-  
-  .label {
-    position: relative;
-    top: -1px;
-  }
-  
-  .transition {
-    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    transition-duration: 700ms;
-    background-color: #5E17EB;
-    border-radius: 20px;
-    width: 0;
-    height: 0;
-    left: 50%;
-    top: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-  }
-  
-  button:hover .transition {
-    width: 18em;
-    height: 18em;
-  }
-  
-  button:active {
-    transform: scale(0.97);
-  }
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+  margin-top: -0.25em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+}
 
-  a{
-    font-family: Montserrat;
-    text-decoration: none; /* Para sacar el subrayado que queda cuando el enlace ya fue visitado */
-  }
+.label {
+  position: relative;
+  top: -1px;
+}
+
+.transition {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 700ms;
+  background-color: #5E17EB;
+  border-radius: 20px;
+  width: 0;
+  height: 0;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+button:hover .transition {
+  width: 18em;
+  height: 18em;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+a{
+  font-family: Montserrat;
+  text-decoration: none; /* Para sacar el subrayado que queda cuando el enlace ya fue visitado */
+}
 
 /* Para cambiar el boton de la letra cuando el enlace no ha sido visitado */
 .botones a:link {
@@ -139,6 +136,48 @@ button {
 /* Para cambiar el boton de la letra cuando el enlace ya ha sido visitado */
 .botones a:visited {  
   color: #FFFFFF;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px black;
+  font-family: Aileron;
+  font-size: 1.4em;
+  margin: auto;
+  width: 75%;
+}
+
+input{
+  height: 2.5em;
+  width: 50%;
+  background-color: rgba(255, 255, 255, .8);
+  font-family: Aileron;
+  padding: .25em 1em;
+  color: black;
+}
+
+::placeholder{
+  color: black;
+  font-family: Aileron;
+  font-size: 1.2em;
+}
+
+.submitBTN{
+  font-family: Aileron;
+  font-size: 1.2em;
+  width: 25%;
+  height: 2.4em;
+  margin: 0 auto 1em;
+  background: rgba(218, 165, 32, 0.750);
+  color: #FFFFFF;
+  border: none;
+  overflow: hidden;
+  border-radius: 18px;
+  text-align: center 
 }
 
 /*boton activo:   #5E17EB   */

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="assets/css/puntajes.css">
+    <script src="assets/js/colorEquipo.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $data["titulo"];?></title>
@@ -26,7 +27,7 @@ if ($data["Competidor"]) {
     foreach ($data["Competidor"] as $competidor) {
         echo "<tr>
                 <td>" . $contador . "</td>
-                <td class='equipo'> AKA </td>    
+                <td class='equipo'>" . $competidor["color"] . "</td>    
                 <td class='nombre'>" . $competidor["nombre"] . "</td>
                 <td>" . $competidor["puntajeRonda"] . "</td>
               </tr>";
